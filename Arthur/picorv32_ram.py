@@ -1,4 +1,5 @@
 import os
+os.environ["QT_QPA_PLATFORM"] = "offscreen"
 from siliconcompiler import ASIC, Design, StdCellLibrary
 from siliconcompiler.targets import skywater130_demo
 
@@ -26,39 +27,24 @@ def build_top():
     project.add_fileset(['rtl', 'sdc'])
     skywater130_demo(project)
 
-    '''
     # 3. Setup SRAM Macro Library
     sram_lib = sky130_sram_2k.setup(stackup='5M1MIC')
     
     # FIX: Use the correct method to inject the library dependency
     project.add_dep(sram_lib)
-    #project.add_asiclib(sram_lib)
-    #project.add('asic', 'macrolib', 'sky130_sram_2k')
-    '''
-    # 3. Setup SRAM Macro Library DIRECTLY
-    macro_name = 'sky130_sram_2kbyte_1rw1r_32x512_8'
-    sram_lib = StdCellLibrary(macro_name)
-    
-    # 3a. Associate the macro with the PDK and Stackup
-    sram_lib.add_asic_pdk('skywater130')
-    sram_lib.add_asic_stackup('5M1MIC')
-    
-    # 3b. Attach the physical files locally
-    with sram_lib.active_fileset('models.physical'):
-        sram_lib.add_file(f'{macro_name}.lef')
-        sram_lib.add_file(f'{macro_name}.gds')
-        
-        # This helper safely maps the files to the APR tools under the hood
-        sram_lib.add_asic_aprfileset()
-    
-    # 3c. Register with the project and add to macrolibs
     project.add_asiclib(sram_lib)
-    #project.add('asic', 'macrolib', macro_name)
+    
 
     # 4. Tool Options for OpenROAD
     project.set('tool', 'openroad', 'task', 'global_route', 'var', 'grt_macro_extension', '0')
     project.set('tool', 'openroad', 'task', 'write_data', 'var', 'write_cdl', 'false')
     project.set('tool', 'openroad', 'task', 'global_placement', 'var', 'place_density', '0.5')
+    project.set('tool', 'openroad', 'task', 'init_floorplan', 'var', 'ord_enable_images', 'false')
+    project.set('tool', 'openroad', 'task', 'macro_placement', 'var', 'ord_enable_images', 'false')
+    project.set('tool', 'openroad', 'task', 'global_placement', 'var', 'ord_enable_images', 'false')
+    project.set('tool', 'openroad', 'task', 'detailed_placement', 'var', 'ord_enable_images', 'false')
+    project.set('tool', 'openroad', 'task', 'global_route', 'var', 'ord_enable_images', 'false')
+    project.set('tool', 'openroad', 'task', 'detailed_route', 'var', 'ord_enable_images', 'false')
 
     # 5. Floorplanning & Constraints
     area = project.constraint.area
@@ -70,7 +56,7 @@ def build_top():
 
 
     # 6. Execute Remote Build
-    project.option.set_remote(True)
+    project.option.set_remote(False)
     project.run()
     project.summary()
 

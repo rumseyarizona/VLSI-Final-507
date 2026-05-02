@@ -49,6 +49,12 @@ def setup(stackup=None):
     lib.add_asic_pdk('skywater130')
     lib.add_asic_stackup(stackup)
     
+    # lib.set_dataroot(
+    #     name='vlsida',
+    #     path='git+https://github.com/VLSIDA/sky130_sram_macros',
+    #     tag='c2333394e0b0b9d9d71185678a8d8087715d5e3b'
+    # )
+    
     rootdir = os.path.dirname(__file__)
     
     # Attach Physical Views
