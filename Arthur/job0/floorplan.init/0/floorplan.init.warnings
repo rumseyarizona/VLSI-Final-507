@@ -1,0 +1,5 @@
+ 17: [WARNING ORD-2011] LEF master sky130_sram_2kbyte_1rw1r_32x512_8 has no liberty cell.
+ 24: Warning: There are 68 input ports missing set_input_delay.
+ 93: Warning: There are 133 output ports missing set_output_delay.
+227: Warning: There are 165 unconstrained endpoints.
+409: [WARNING IFP-0028] Core area lower left (10.000, 10.000) snapped to (10.120, 10.880).

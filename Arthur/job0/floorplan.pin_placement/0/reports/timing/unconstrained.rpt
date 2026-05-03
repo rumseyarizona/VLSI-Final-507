@@ -1,0 +1,27 @@
+Startpoint: rv32_soc/mem_wordsize[1]$_DFF_P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: mem_la_wstrb[0] (output port)
+Path Group: unconstrained
+Path Type: max
+Corner: slow
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00 ^ rv32_soc/mem_wordsize[1]$_DFF_P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+    28    0.06    0.59    1.35    1.35 v rv32_soc/mem_wordsize[1]$_DFF_P_/Q (sky130_fd_sc_hd__dfxtp_1)
+                                         _0506_ (net)
+                  0.59    0.00    1.35 v _4500_/B (sky130_fd_sc_hd__nor2_1)
+    38    0.12    7.94    6.57    7.92 ^ _4500_/Y (sky130_fd_sc_hd__nor2_1)
+                                         _0507_ (net)
+                  7.94    0.00    7.92 ^ _4501_/B1 (sky130_fd_sc_hd__a21o_1)
+    10    0.03    0.77    3.05   10.97 ^ _4501_/X (sky130_fd_sc_hd__a21o_1)
+                                         _0508_ (net)
+                  0.77    0.00   10.97 ^ _4506_/B1_N (sky130_fd_sc_hd__o21bai_1)
+    10    0.06    4.70    2.13   13.10 ^ _4506_/Y (sky130_fd_sc_hd__o21bai_1)
+                                         mem_la_wstrb[0] (net)
+                  4.70    0.00   13.10 ^ mem_la_wstrb[0] (out)
+                                 13.10   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+

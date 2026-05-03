@@ -1,0 +1,7 @@
+Clock clk
+ 2.5137 source latency rv32_soc/reg_pc[8]$_SDFFE_PN0P_/CLK ^
+-1.8727 target latency rv32_soc/cpuregs[11][9]$_DFFE_PP_/CLK ^
+ 0.0000 CRPR
+--------------
+ 0.6410 hold skew
+

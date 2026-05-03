@@ -1,0 +1,99 @@
+ 40: [WARNING MPL-0002] Couldn't align pin sram/addr1[8] from layer met4 to the track-grid.
+ 41: [WARNING MPL-0002] Couldn't align pin sram/addr1[7] from layer met4 to the track-grid.
+ 42: [WARNING MPL-0002] Couldn't align pin sram/addr1[0] from layer met4 to the track-grid.
+ 43: [WARNING MPL-0002] Couldn't align pin sram/addr1[1] from layer met4 to the track-grid.
+ 44: [WARNING MPL-0002] Couldn't align pin sram/dout1[31] from layer met4 to the track-grid.
+ 45: [WARNING MPL-0002] Couldn't align pin sram/dout0[31] from layer met4 to the track-grid.
+ 46: [WARNING MPL-0002] Couldn't align pin sram/dout1[30] from layer met4 to the track-grid.
+ 47: [WARNING MPL-0002] Couldn't align pin sram/dout0[30] from layer met4 to the track-grid.
+ 48: [WARNING MPL-0002] Couldn't align pin sram/dout1[29] from layer met4 to the track-grid.
+ 49: [WARNING MPL-0002] Couldn't align pin sram/dout0[29] from layer met4 to the track-grid.
+ 50: [WARNING MPL-0002] Couldn't align pin sram/dout1[28] from layer met4 to the track-grid.
+ 51: [WARNING MPL-0002] Couldn't align pin sram/dout0[28] from layer met4 to the track-grid.
+ 52: [WARNING MPL-0002] Couldn't align pin sram/dout1[27] from layer met4 to the track-grid.
+ 53: [WARNING MPL-0002] Couldn't align pin sram/dout0[27] from layer met4 to the track-grid.
+ 54: [WARNING MPL-0002] Couldn't align pin sram/dout1[26] from layer met4 to the track-grid.
+ 55: [WARNING MPL-0002] Couldn't align pin sram/dout0[26] from layer met4 to the track-grid.
+ 56: [WARNING MPL-0002] Couldn't align pin sram/dout1[25] from layer met4 to the track-grid.
+ 57: [WARNING MPL-0002] Couldn't align pin sram/dout0[25] from layer met4 to the track-grid.
+ 58: [WARNING MPL-0002] Couldn't align pin sram/dout0[24] from layer met4 to the track-grid.
+ 59: [WARNING MPL-0002] Couldn't align pin sram/dout1[24] from layer met4 to the track-grid.
+ 60: [WARNING MPL-0002] Couldn't align pin sram/dout0[23] from layer met4 to the track-grid.
+ 61: [WARNING MPL-0002] Couldn't align pin sram/dout1[23] from layer met4 to the track-grid.
+ 62: [WARNING MPL-0002] Couldn't align pin sram/dout1[22] from layer met4 to the track-grid.
+ 63: [WARNING MPL-0002] Couldn't align pin sram/dout0[22] from layer met4 to the track-grid.
+ 64: [WARNING MPL-0002] Couldn't align pin sram/dout1[21] from layer met4 to the track-grid.
+ 65: [WARNING MPL-0002] Couldn't align pin sram/dout0[21] from layer met4 to the track-grid.
+ 66: [WARNING MPL-0002] Couldn't align pin sram/dout1[20] from layer met4 to the track-grid.
+ 67: [WARNING MPL-0002] Couldn't align pin sram/dout0[20] from layer met4 to the track-grid.
+ 68: [WARNING MPL-0002] Couldn't align pin sram/dout0[19] from layer met4 to the track-grid.
+ 69: [WARNING MPL-0002] Couldn't align pin sram/dout1[19] from layer met4 to the track-grid.
+ 70: [WARNING MPL-0002] Couldn't align pin sram/dout1[18] from layer met4 to the track-grid.
+ 71: [WARNING MPL-0002] Couldn't align pin sram/dout0[18] from layer met4 to the track-grid.
+ 72: [WARNING MPL-0002] Couldn't align pin sram/dout0[17] from layer met4 to the track-grid.
+ 73: [WARNING MPL-0002] Couldn't align pin sram/dout1[17] from layer met4 to the track-grid.
+ 74: [WARNING MPL-0002] Couldn't align pin sram/dout1[16] from layer met4 to the track-grid.
+ 75: [WARNING MPL-0002] Couldn't align pin sram/dout1[15] from layer met4 to the track-grid.
+ 76: [WARNING MPL-0002] Couldn't align pin sram/dout0[15] from layer met4 to the track-grid.
+ 77: [WARNING MPL-0002] Couldn't align pin sram/dout1[14] from layer met4 to the track-grid.
+ 78: [WARNING MPL-0002] Couldn't align pin sram/dout0[14] from layer met4 to the track-grid.
+ 79: [WARNING MPL-0002] Couldn't align pin sram/dout0[13] from layer met4 to the track-grid.
+ 80: [WARNING MPL-0002] Couldn't align pin sram/dout1[13] from layer met4 to the track-grid.
+ 81: [WARNING MPL-0002] Couldn't align pin sram/din0[31] from layer met4 to the track-grid.
+ 82: [WARNING MPL-0002] Couldn't align pin sram/dout0[12] from layer met4 to the track-grid.
+ 83: [WARNING MPL-0002] Couldn't align pin sram/dout1[12] from layer met4 to the track-grid.
+ 84: [WARNING MPL-0002] Couldn't align pin sram/din0[30] from layer met4 to the track-grid.
+ 85: [WARNING MPL-0002] Couldn't align pin sram/din0[29] from layer met4 to the track-grid.
+ 86: [WARNING MPL-0002] Couldn't align pin sram/dout1[11] from layer met4 to the track-grid.
+ 87: [WARNING MPL-0002] Couldn't align pin sram/dout0[11] from layer met4 to the track-grid.
+ 88: [WARNING MPL-0002] Couldn't align pin sram/din0[27] from layer met4 to the track-grid.
+ 89: [WARNING MPL-0002] Couldn't align pin sram/dout1[10] from layer met4 to the track-grid.
+ 90: [WARNING MPL-0002] Couldn't align pin sram/dout0[10] from layer met4 to the track-grid.
+ 91: [WARNING MPL-0002] Couldn't align pin sram/din0[26] from layer met4 to the track-grid.
+ 92: [WARNING MPL-0002] Couldn't align pin sram/din0[25] from layer met4 to the track-grid.
+ 93: [WARNING MPL-0002] Couldn't align pin sram/din0[24] from layer met4 to the track-grid.
+ 94: [WARNING MPL-0002] Couldn't align pin sram/dout1[9] from layer met4 to the track-grid.
+ 95: [WARNING MPL-0002] Couldn't align pin sram/dout0[9] from layer met4 to the track-grid.
+ 96: [WARNING MPL-0002] Couldn't align pin sram/din0[23] from layer met4 to the track-grid.
+ 97: [WARNING MPL-0002] Couldn't align pin sram/din0[22] from layer met4 to the track-grid.
+ 98: [WARNING MPL-0002] Couldn't align pin sram/dout1[8] from layer met4 to the track-grid.
+ 99: [WARNING MPL-0002] Couldn't align pin sram/dout0[8] from layer met4 to the track-grid.
+100: [WARNING MPL-0002] Couldn't align pin sram/din0[21] from layer met4 to the track-grid.
+101: [WARNING MPL-0002] Couldn't align pin sram/dout1[7] from layer met4 to the track-grid.
+102: [WARNING MPL-0002] Couldn't align pin sram/dout0[7] from layer met4 to the track-grid.
+103: [WARNING MPL-0002] Couldn't align pin sram/din0[19] from layer met4 to the track-grid.
+104: [WARNING MPL-0002] Couldn't align pin sram/din0[18] from layer met4 to the track-grid.
+105: [WARNING MPL-0002] Couldn't align pin sram/dout0[6] from layer met4 to the track-grid.
+106: [WARNING MPL-0002] Couldn't align pin sram/dout1[6] from layer met4 to the track-grid.
+107: [WARNING MPL-0002] Couldn't align pin sram/din0[17] from layer met4 to the track-grid.
+108: [WARNING MPL-0002] Couldn't align pin sram/din0[16] from layer met4 to the track-grid.
+109: [WARNING MPL-0002] Couldn't align pin sram/dout1[5] from layer met4 to the track-grid.
+110: [WARNING MPL-0002] Couldn't align pin sram/dout0[5] from layer met4 to the track-grid.
+111: [WARNING MPL-0002] Couldn't align pin sram/din0[15] from layer met4 to the track-grid.
+112: [WARNING MPL-0002] Couldn't align pin sram/din0[14] from layer met4 to the track-grid.
+113: [WARNING MPL-0002] Couldn't align pin sram/dout1[4] from layer met4 to the track-grid.
+114: [WARNING MPL-0002] Couldn't align pin sram/dout0[4] from layer met4 to the track-grid.
+115: [WARNING MPL-0002] Couldn't align pin sram/din0[13] from layer met4 to the track-grid.
+116: [WARNING MPL-0002] Couldn't align pin sram/dout1[3] from layer met4 to the track-grid.
+117: [WARNING MPL-0002] Couldn't align pin sram/dout0[3] from layer met4 to the track-grid.
+118: [WARNING MPL-0002] Couldn't align pin sram/din0[11] from layer met4 to the track-grid.
+119: [WARNING MPL-0002] Couldn't align pin sram/din0[10] from layer met4 to the track-grid.
+120: [WARNING MPL-0002] Couldn't align pin sram/dout0[2] from layer met4 to the track-grid.
+121: [WARNING MPL-0002] Couldn't align pin sram/din0[9] from layer met4 to the track-grid.
+122: [WARNING MPL-0002] Couldn't align pin sram/dout1[2] from layer met4 to the track-grid.
+123: [WARNING MPL-0002] Couldn't align pin sram/din0[8] from layer met4 to the track-grid.
+124: [WARNING MPL-0002] Couldn't align pin sram/din0[7] from layer met4 to the track-grid.
+125: [WARNING MPL-0002] Couldn't align pin sram/dout1[1] from layer met4 to the track-grid.
+126: [WARNING MPL-0002] Couldn't align pin sram/din0[6] from layer met4 to the track-grid.
+127: [WARNING MPL-0002] Couldn't align pin sram/dout1[0] from layer met4 to the track-grid.
+128: [WARNING MPL-0002] Couldn't align pin sram/din0[5] from layer met4 to the track-grid.
+129: [WARNING MPL-0002] Couldn't align pin sram/dout0[0] from layer met4 to the track-grid.
+130: [WARNING MPL-0002] Couldn't align pin sram/din0[3] from layer met4 to the track-grid.
+131: [WARNING MPL-0002] Couldn't align pin sram/din0[2] from layer met4 to the track-grid.
+132: [WARNING MPL-0002] Couldn't align pin sram/din0[1] from layer met4 to the track-grid.
+133: [WARNING MPL-0002] Couldn't align pin sram/din0[0] from layer met4 to the track-grid.
+134: [WARNING MPL-0002] Couldn't align pin sram/wmask0[3] from layer met4 to the track-grid.
+135: [WARNING MPL-0002] Couldn't align pin sram/wmask0[2] from layer met4 to the track-grid.
+136: [WARNING MPL-0002] Couldn't align pin sram/wmask0[1] from layer met4 to the track-grid.
+137: [WARNING MPL-0002] Couldn't align pin sram/addr0[1] from layer met4 to the track-grid.
+138: [WARNING MPL-0002] Couldn't align pin sram/addr0[0] from layer met4 to the track-grid.

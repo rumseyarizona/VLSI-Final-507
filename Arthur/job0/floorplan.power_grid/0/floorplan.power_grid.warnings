@@ -1,0 +1,3 @@
+ 26: [WARNING PDN-0189] Supply pin sram/vccd1 is not connected to any net.
+ 27: [WARNING PDN-0189] Supply pin sram/vssd1 is not connected to any net.
+137: [WARNING GUI-0076] QStandardPaths: wrong permissions on runtime directory /run/user/1000/, 0755 instead of 0700

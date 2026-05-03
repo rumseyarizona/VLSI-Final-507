@@ -1,0 +1,3 @@
+ 27: [WARNING CTS-0132] -balance_levels is obsolete.
+ 28: [WARNING CTS-0128] -obstruction_aware is obsolete.
+593: [WARNING GUI-0076] QStandardPaths: wrong permissions on runtime directory /run/user/1000/, 0755 instead of 0700

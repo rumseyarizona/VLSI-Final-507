@@ -1,0 +1,16 @@
+Startpoint: clk (clock source 'clk')
+Endpoint: sram/clk0 (internal pin)
+Path Group: unconstrained
+Path Type: max
+Corner: fast
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+  1576    2.90    0.00    0.00   12.50 v clk (in)
+                                         clk (net)
+                  0.00    0.00   12.50 v sram/clk0 (sky130_sram_2kbyte_1rw1r_32x512_8)
+                                 12.50   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+

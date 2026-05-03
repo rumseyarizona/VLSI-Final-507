@@ -1,0 +1,50 @@
+Startpoint: rv32_soc/mem_do_prefetch$_SDFFE_PP0P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: mem_la_addr[5] (output port)
+Path Group: unconstrained
+Path Type: max
+Corner: slow
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+     2    0.06    0.00    0.00    0.00 ^ clk (in)
+                                         clk (net)
+                  0.00    0.00    0.00 ^ clkbuf_regs_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     1    0.01    0.09    0.27    0.27 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clk_regs (net)
+                  0.09    0.00    0.27 ^ clkbuf_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02    0.12    0.34    0.61 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_0_clk_regs (net)
+                  0.12    0.00    0.61 ^ clkbuf_1_1_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02    0.14    0.38    0.98 ^ clkbuf_1_1_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_1_1_0_clk_regs (net)
+                  0.14    0.00    0.99 ^ clkbuf_2_2_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02    0.13    0.38    1.36 ^ clkbuf_2_2_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_2_2_0_clk_regs (net)
+                  0.13    0.00    1.36 ^ clkbuf_3_4__f_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     8    0.08    0.34    0.54    1.90 ^ clkbuf_3_4__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_3_4__leaf_clk_regs (net)
+                  0.34    0.00    1.91 ^ clkbuf_leaf_54_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+    27    0.06    0.27    0.61    2.52 ^ clkbuf_leaf_54_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_leaf_54_clk_regs (net)
+                  0.27    0.00    2.52 ^ rv32_soc/mem_do_prefetch$_SDFFE_PP0P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+    10    0.03    0.99    1.98    4.50 ^ rv32_soc/mem_do_prefetch$_SDFFE_PP0P_/Q (sky130_fd_sc_hd__dfxtp_1)
+                                         _0890_ (net)
+                  0.99    0.00    4.50 ^ _4942_/A (sky130_fd_sc_hd__or2_1)
+     1    0.00    0.11    0.69    5.19 ^ _4942_/X (sky130_fd_sc_hd__or2_1)
+                                         _0891_ (net)
+                  0.11    0.00    5.19 ^ place835/A (sky130_fd_sc_hd__buf_1)
+    62    0.19    8.49    6.44   11.63 ^ place835/X (sky130_fd_sc_hd__buf_1)
+                                         net835 (net)
+                  8.49    0.00   11.64 ^ _5064_/B (sky130_fd_sc_hd__nor2_1)
+     1    0.00    0.90    2.27   13.91 v _5064_/Y (sky130_fd_sc_hd__nor2_1)
+                                         _0988_ (net)
+                  0.90    0.00   13.91 v _5065_/B1 (sky130_fd_sc_hd__a31oi_1)
+     2    0.04    3.83    3.58   17.49 ^ _5065_/Y (sky130_fd_sc_hd__a31oi_1)
+                                         mem_la_addr[5] (net)
+                  3.83    0.00   17.49 ^ mem_la_addr[5] (out)
+                                 17.49   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+

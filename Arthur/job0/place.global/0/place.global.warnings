@@ -1,0 +1,4 @@
+113: [WARNING RSZ-2005] cannot find a viable buffering solution on pin _7005_/Y after 1 rounds of buffering (no solution meets design rules)
+115: [WARNING RSZ-2005] cannot find a viable buffering solution on pin _8468_/Y after 1 rounds of buffering (no solution meets design rules)
+144: [WARNING GRT-0281] Net clk has a large fanout of 1577 terminals.
+636: [WARNING RSZ-2005] cannot find a viable buffering solution on pin _7005_/Y after 1 rounds of buffering (no solution meets design rules)

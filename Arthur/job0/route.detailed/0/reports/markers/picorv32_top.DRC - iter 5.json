@@ -1,0 +1,263 @@
+{
+    "DRC - iter 5": {
+        "description": "",
+        "source": "DRT",
+        "max_markers": "10000",
+        "category": {
+            "Short": {
+                "description": "",
+                "source": "DRT",
+                "max_markers": "10000",
+                "violations": [
+                    {
+                        "visited": "false",
+                        "visible": "true",
+                        "waived": "false",
+                        "layer": "met1",
+                        "shape": [
+                            {
+                                "type": "box",
+                                "points": [
+                                    {
+                                        "x": "654.0500",
+                                        "y": "632.1700"
+                                    },
+                                    {
+                                        "x": "654.1900",
+                                        "y": "632.3200"
+                                    }
+                                ]
+                            }
+                        ],
+                        "sources": [
+                            {
+                                "type": "net",
+                                "name": "net869"
+                            },
+                            {
+                                "type": "net",
+                                "name": "rv32_soc\\\/count_cycle\\[44\\]"
+                            }
+                        ]
+                    },
+                    {
+                        "visited": "false",
+                        "visible": "true",
+                        "waived": "false",
+                        "layer": "met1",
+                        "shape": [
+                            {
+                                "type": "box",
+                                "points": [
+                                    {
+                                        "x": "654.0500",
+                                        "y": "632.1700"
+                                    },
+                                    {
+                                        "x": "654.1900",
+                                        "y": "632.2500"
+                                    }
+                                ]
+                            }
+                        ],
+                        "sources": [
+                            {
+                                "type": "net",
+                                "name": "net869"
+                            },
+                            {
+                                "type": "net",
+                                "name": "rv32_soc\\\/count_cycle\\[44\\]"
+                            }
+                        ]
+                    },
+                    {
+                        "visited": "false",
+                        "visible": "true",
+                        "waived": "false",
+                        "layer": "met1",
+                        "shape": [
+                            {
+                                "type": "box",
+                                "points": [
+                                    {
+                                        "x": "654.0500",
+                                        "y": "632.1700"
+                                    },
+                                    {
+                                        "x": "654.1600",
+                                        "y": "632.3200"
+                                    }
+                                ]
+                            }
+                        ],
+                        "sources": [
+                            {
+                                "type": "net",
+                                "name": "net869"
+                            },
+                            {
+                                "type": "net",
+                                "name": "rv32_soc\\\/count_cycle\\[44\\]"
+                            }
+                        ]
+                    },
+                    {
+                        "visited": "false",
+                        "visible": "true",
+                        "waived": "false",
+                        "layer": "met1",
+                        "shape": [
+                            {
+                                "type": "box",
+                                "points": [
+                                    {
+                                        "x": "654.0500",
+                                        "y": "632.1700"
+                                    },
+                                    {
+                                        "x": "654.1600",
+                                        "y": "632.2500"
+                                    }
+                                ]
+                            }
+                        ],
+                        "sources": [
+                            {
+                                "type": "net",
+                                "name": "net869"
+                            },
+                            {
+                                "type": "net",
+                                "name": "rv32_soc\\\/count_cycle\\[44\\]"
+                            }
+                        ]
+                    },
+                    {
+                        "visited": "false",
+                        "visible": "true",
+                        "waived": "false",
+                        "layer": "met1",
+                        "shape": [
+                            {
+                                "type": "box",
+                                "points": [
+                                    {
+                                        "x": "654.0500",
+                                        "y": "632.1700"
+                                    },
+                                    {
+                                        "x": "654.2650",
+                                        "y": "632.3100"
+                                    }
+                                ]
+                            }
+                        ],
+                        "sources": [
+                            {
+                                "type": "net",
+                                "name": "net869"
+                            },
+                            {
+                                "type": "net",
+                                "name": "rv32_soc\\\/count_cycle\\[44\\]"
+                            }
+                        ]
+                    },
+                    {
+                        "visited": "false",
+                        "visible": "true",
+                        "waived": "false",
+                        "layer": "met1",
+                        "shape": [
+                            {
+                                "type": "box",
+                                "points": [
+                                    {
+                                        "x": "654.0500",
+                                        "y": "632.1700"
+                                    },
+                                    {
+                                        "x": "654.2650",
+                                        "y": "632.2500"
+                                    }
+                                ]
+                            }
+                        ],
+                        "sources": [
+                            {
+                                "type": "net",
+                                "name": "net869"
+                            },
+                            {
+                                "type": "net",
+                                "name": "rv32_soc\\\/count_cycle\\[44\\]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "Metal Spacing": {
+                "description": "",
+                "source": "DRT",
+                "max_markers": "10000",
+                "violations": [
+                    {
+                        "visited": "false",
+                        "visible": "true",
+                        "waived": "false",
+                        "layer": "met1",
+                        "shape": [
+                            {
+                                "type": "box",
+                                "points": [
+                                    {
+                                        "x": "655.8900",
+                                        "y": "632.1600"
+                                    },
+                                    {
+                                        "x": "655.9950",
+                                        "y": "632.3000"
+                                    }
+                                ]
+                            }
+                        ],
+                        "sources": [
+                            {
+                                "type": "net",
+                                "name": "net867"
+                            }
+                        ]
+                    },
+                    {
+                        "visited": "false",
+                        "visible": "true",
+                        "waived": "false",
+                        "layer": "met1",
+                        "shape": [
+                            {
+                                "type": "box",
+                                "points": [
+                                    {
+                                        "x": "655.8900",
+                                        "y": "632.1300"
+                                    },
+                                    {
+                                        "x": "655.9950",
+                                        "y": "632.3000"
+                                    }
+                                ]
+                            }
+                        ],
+                        "sources": [
+                            {
+                                "type": "net",
+                                "name": "net867"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

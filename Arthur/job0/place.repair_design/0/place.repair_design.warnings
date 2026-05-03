@@ -1,0 +1,2 @@
+320: [WARNING GUI-0076] QStandardPaths: wrong permissions on runtime directory /run/user/1000/, 0755 instead of 0700
+325: [WARNING GRT-0281] Net clk has a large fanout of 1577 terminals.

@@ -1,0 +1,3 @@
+ 489: Warning: Resizing cell port picorv32_top.sram.addr0 from 32 bits to 9 bits.
+4033: ABC: Warning: Detected 9 multi-output cells (for example, "sky130_fd_sc_hd__fa_1").
+4041: ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").

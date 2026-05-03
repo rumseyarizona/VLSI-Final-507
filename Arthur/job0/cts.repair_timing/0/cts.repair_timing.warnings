@@ -1,0 +1,2 @@
+  90: [WARNING RSZ-0062] Unable to repair all setup violations.
+2514: [WARNING GUI-0076] QStandardPaths: wrong permissions on runtime directory /run/user/1000/, 0755 instead of 0700

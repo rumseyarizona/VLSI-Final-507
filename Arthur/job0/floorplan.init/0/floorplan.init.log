@@ -1,0 +1,631 @@
+OpenROAD v2.0-27941-gf9f3050fe8 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 20 thread(s).
+[INFO FLW-0001] Defining timing corners: fast slow typical
+Reading liberty file for fast: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/libs/sky130hd/nldm/sky130_fd_sc_hd__ff_100C_1v95.lib.gz
+Reading liberty file for slow: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/libs/sky130hd/nldm/sky130_fd_sc_hd__ss_n40C_1v40.lib.gz
+Reading liberty file for typical: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/libs/sky130hd/nldm/sky130_fd_sc_hd__tt_025C_1v80.lib.gz
+Reading techlef: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/base/apr/sky130_fd_sc.tlef
+[INFO ODB-0227] LEF file: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/base/apr/sky130_fd_sc.tlef, created 14 layers, 25 vias
+Reading lef: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/libs/sky130hd/lef/sky130_fd_sc_hd_merged.lef
+[INFO ODB-0227] LEF file: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/libs/sky130hd/lef/sky130_fd_sc_hd_merged.lef, created 437 library cells
+Reading lef: /home/arthur/ECE507/SRAM/sky130_sram_2kbyte_1rw1r_32x512_8.lef
+[INFO ODB-0227] LEF file: /home/arthur/ECE507/SRAM/sky130_sram_2kbyte_1rw1r_32x512_8.lef, created 1 library cells
+Reading netlist verilog: inputs/picorv32_top.vg
+[WARNING ORD-2011] LEF master sky130_sram_2kbyte_1rw1r_32x512_8 has no liberty cell.
+Loading global connect configuration: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/libs/sky130hd/apr/openroad/global_connect.tcl
+Global connection rules: 2
+  Instances: ".*" with pins "VPWR" connect to "VDD"
+  Instances: ".*" with pins "VGND" connect to "VSS"
+Reading SDC: /home/arthur/ECE507/SRAM/picorv32.sdc
+[INFO FLW-0001] Timing path groups: clk asynchronous {path delay} {gated clock} unconstrained
+Warning: There are 68 input ports missing set_input_delay.
+  irq[0]
+  irq[10]
+  irq[11]
+  irq[12]
+  irq[13]
+  irq[14]
+  irq[15]
+  irq[16]
+  irq[17]
+  irq[18]
+  irq[19]
+  irq[1]
+  irq[20]
+  irq[21]
+  irq[22]
+  irq[23]
+  irq[24]
+  irq[25]
+  irq[26]
+  irq[27]
+  irq[28]
+  irq[29]
+  irq[2]
+  irq[30]
+  irq[31]
+  irq[3]
+  irq[4]
+  irq[5]
+  irq[6]
+  irq[7]
+  irq[8]
+  irq[9]
+  pcpi_rd[0]
+  pcpi_rd[10]
+  pcpi_rd[11]
+  pcpi_rd[12]
+  pcpi_rd[13]
+  pcpi_rd[14]
+  pcpi_rd[15]
+  pcpi_rd[16]
+  pcpi_rd[17]
+  pcpi_rd[18]
+  pcpi_rd[19]
+  pcpi_rd[1]
+  pcpi_rd[20]
+  pcpi_rd[21]
+  pcpi_rd[22]
+  pcpi_rd[23]
+  pcpi_rd[24]
+  pcpi_rd[25]
+  pcpi_rd[26]
+  pcpi_rd[27]
+  pcpi_rd[28]
+  pcpi_rd[29]
+  pcpi_rd[2]
+  pcpi_rd[30]
+  pcpi_rd[31]
+  pcpi_rd[3]
+  pcpi_rd[4]
+  pcpi_rd[5]
+  pcpi_rd[6]
+  pcpi_rd[7]
+  pcpi_rd[8]
+  pcpi_rd[9]
+  pcpi_ready
+  pcpi_wait
+  pcpi_wr
+  resetn
+Warning: There are 133 output ports missing set_output_delay.
+  mem_la_addr[10]
+  mem_la_addr[11]
+  mem_la_addr[12]
+  mem_la_addr[13]
+  mem_la_addr[14]
+  mem_la_addr[15]
+  mem_la_addr[16]
+  mem_la_addr[17]
+  mem_la_addr[18]
+  mem_la_addr[19]
+  mem_la_addr[20]
+  mem_la_addr[21]
+  mem_la_addr[22]
+  mem_la_addr[23]
+  mem_la_addr[24]
+  mem_la_addr[25]
+  mem_la_addr[26]
+  mem_la_addr[27]
+  mem_la_addr[28]
+  mem_la_addr[29]
+  mem_la_addr[2]
+  mem_la_addr[30]
+  mem_la_addr[31]
+  mem_la_addr[3]
+  mem_la_addr[4]
+  mem_la_addr[5]
+  mem_la_addr[6]
+  mem_la_addr[7]
+  mem_la_addr[8]
+  mem_la_addr[9]
+  mem_la_read
+  mem_la_wdata[0]
+  mem_la_wdata[10]
+  mem_la_wdata[11]
+  mem_la_wdata[12]
+  mem_la_wdata[13]
+  mem_la_wdata[14]
+  mem_la_wdata[15]
+  mem_la_wdata[16]
+  mem_la_wdata[17]
+  mem_la_wdata[18]
+  mem_la_wdata[19]
+  mem_la_wdata[1]
+  mem_la_wdata[20]
+  mem_la_wdata[21]
+  mem_la_wdata[22]
+  mem_la_wdata[23]
+  mem_la_wdata[24]
+  mem_la_wdata[25]
+  mem_la_wdata[26]
+  mem_la_wdata[27]
+  mem_la_wdata[28]
+  mem_la_wdata[29]
+  mem_la_wdata[2]
+  mem_la_wdata[30]
+  mem_la_wdata[31]
+  mem_la_wdata[3]
+  mem_la_wdata[4]
+  mem_la_wdata[5]
+  mem_la_wdata[6]
+  mem_la_wdata[7]
+  mem_la_wdata[8]
+  mem_la_wdata[9]
+  mem_la_write
+  mem_la_wstrb[0]
+  mem_la_wstrb[1]
+  mem_la_wstrb[2]
+  mem_la_wstrb[3]
+  pcpi_rs1[0]
+  pcpi_rs1[10]
+  pcpi_rs1[11]
+  pcpi_rs1[12]
+  pcpi_rs1[13]
+  pcpi_rs1[14]
+  pcpi_rs1[15]
+  pcpi_rs1[16]
+  pcpi_rs1[17]
+  pcpi_rs1[18]
+  pcpi_rs1[19]
+  pcpi_rs1[1]
+  pcpi_rs1[20]
+  pcpi_rs1[21]
+  pcpi_rs1[22]
+  pcpi_rs1[23]
+  pcpi_rs1[24]
+  pcpi_rs1[25]
+  pcpi_rs1[26]
+  pcpi_rs1[27]
+  pcpi_rs1[28]
+  pcpi_rs1[29]
+  pcpi_rs1[2]
+  pcpi_rs1[30]
+  pcpi_rs1[31]
+  pcpi_rs1[3]
+  pcpi_rs1[4]
+  pcpi_rs1[5]
+  pcpi_rs1[6]
+  pcpi_rs1[7]
+  pcpi_rs1[8]
+  pcpi_rs1[9]
+  pcpi_rs2[0]
+  pcpi_rs2[10]
+  pcpi_rs2[11]
+  pcpi_rs2[12]
+  pcpi_rs2[13]
+  pcpi_rs2[14]
+  pcpi_rs2[15]
+  pcpi_rs2[16]
+  pcpi_rs2[17]
+  pcpi_rs2[18]
+  pcpi_rs2[19]
+  pcpi_rs2[1]
+  pcpi_rs2[20]
+  pcpi_rs2[21]
+  pcpi_rs2[22]
+  pcpi_rs2[23]
+  pcpi_rs2[24]
+  pcpi_rs2[25]
+  pcpi_rs2[26]
+  pcpi_rs2[27]
+  pcpi_rs2[28]
+  pcpi_rs2[29]
+  pcpi_rs2[2]
+  pcpi_rs2[30]
+  pcpi_rs2[31]
+  pcpi_rs2[3]
+  pcpi_rs2[4]
+  pcpi_rs2[5]
+  pcpi_rs2[6]
+  pcpi_rs2[7]
+  pcpi_rs2[8]
+  pcpi_rs2[9]
+  trap
+Warning: There are 165 unconstrained endpoints.
+  mem_la_addr[10]
+  mem_la_addr[11]
+  mem_la_addr[12]
+  mem_la_addr[13]
+  mem_la_addr[14]
+  mem_la_addr[15]
+  mem_la_addr[16]
+  mem_la_addr[17]
+  mem_la_addr[18]
+  mem_la_addr[19]
+  mem_la_addr[20]
+  mem_la_addr[21]
+  mem_la_addr[22]
+  mem_la_addr[23]
+  mem_la_addr[24]
+  mem_la_addr[25]
+  mem_la_addr[26]
+  mem_la_addr[27]
+  mem_la_addr[28]
+  mem_la_addr[29]
+  mem_la_addr[2]
+  mem_la_addr[30]
+  mem_la_addr[31]
+  mem_la_addr[3]
+  mem_la_addr[4]
+  mem_la_addr[5]
+  mem_la_addr[6]
+  mem_la_addr[7]
+  mem_la_addr[8]
+  mem_la_addr[9]
+  mem_la_read
+  mem_la_wdata[0]
+  mem_la_wdata[10]
+  mem_la_wdata[11]
+  mem_la_wdata[12]
+  mem_la_wdata[13]
+  mem_la_wdata[14]
+  mem_la_wdata[15]
+  mem_la_wdata[16]
+  mem_la_wdata[17]
+  mem_la_wdata[18]
+  mem_la_wdata[19]
+  mem_la_wdata[1]
+  mem_la_wdata[20]
+  mem_la_wdata[21]
+  mem_la_wdata[22]
+  mem_la_wdata[23]
+  mem_la_wdata[24]
+  mem_la_wdata[25]
+  mem_la_wdata[26]
+  mem_la_wdata[27]
+  mem_la_wdata[28]
+  mem_la_wdata[29]
+  mem_la_wdata[2]
+  mem_la_wdata[30]
+  mem_la_wdata[31]
+  mem_la_wdata[3]
+  mem_la_wdata[4]
+  mem_la_wdata[5]
+  mem_la_wdata[6]
+  mem_la_wdata[7]
+  mem_la_wdata[8]
+  mem_la_wdata[9]
+  mem_la_write
+  mem_la_wstrb[0]
+  mem_la_wstrb[1]
+  mem_la_wstrb[2]
+  mem_la_wstrb[3]
+  pcpi_rs1[0]
+  pcpi_rs1[10]
+  pcpi_rs1[11]
+  pcpi_rs1[12]
+  pcpi_rs1[13]
+  pcpi_rs1[14]
+  pcpi_rs1[15]
+  pcpi_rs1[16]
+  pcpi_rs1[17]
+  pcpi_rs1[18]
+  pcpi_rs1[19]
+  pcpi_rs1[1]
+  pcpi_rs1[20]
+  pcpi_rs1[21]
+  pcpi_rs1[22]
+  pcpi_rs1[23]
+  pcpi_rs1[24]
+  pcpi_rs1[25]
+  pcpi_rs1[26]
+  pcpi_rs1[27]
+  pcpi_rs1[28]
+  pcpi_rs1[29]
+  pcpi_rs1[2]
+  pcpi_rs1[30]
+  pcpi_rs1[31]
+  pcpi_rs1[3]
+  pcpi_rs1[4]
+  pcpi_rs1[5]
+  pcpi_rs1[6]
+  pcpi_rs1[7]
+  pcpi_rs1[8]
+  pcpi_rs1[9]
+  pcpi_rs2[0]
+  pcpi_rs2[10]
+  pcpi_rs2[11]
+  pcpi_rs2[12]
+  pcpi_rs2[13]
+  pcpi_rs2[14]
+  pcpi_rs2[15]
+  pcpi_rs2[16]
+  pcpi_rs2[17]
+  pcpi_rs2[18]
+  pcpi_rs2[19]
+  pcpi_rs2[1]
+  pcpi_rs2[20]
+  pcpi_rs2[21]
+  pcpi_rs2[22]
+  pcpi_rs2[23]
+  pcpi_rs2[24]
+  pcpi_rs2[25]
+  pcpi_rs2[26]
+  pcpi_rs2[27]
+  pcpi_rs2[28]
+  pcpi_rs2[29]
+  pcpi_rs2[2]
+  pcpi_rs2[30]
+  pcpi_rs2[31]
+  pcpi_rs2[3]
+  pcpi_rs2[4]
+  pcpi_rs2[5]
+  pcpi_rs2[6]
+  pcpi_rs2[7]
+  pcpi_rs2[8]
+  pcpi_rs2[9]
+  trap
+  rv32_soc/mem_rdata_q[0]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[10]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[11]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[12]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[13]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[14]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[15]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[16]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[17]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[18]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[19]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[1]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[20]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[21]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[22]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[23]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[24]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[25]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[26]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[27]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[28]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[29]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[2]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[30]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[31]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[3]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[4]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[5]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[6]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[7]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[8]$_DFFE_PP_/D
+  rv32_soc/mem_rdata_q[9]$_DFFE_PP_/D
+[INFO FLW-0001] Sourcing parasitic estimation from: /home/arthur/ECE507/SRAM/build/picorv32_top/job0/floorplan.init/0/inputs/sc_parasitics.tcl
+[INFO FLW-0001] Using met5 for clock parasitics estimation
+[INFO FLW-0001] Using met3 for signal parasitics estimation
+[INFO FLW-0001] Setting global routing adjustment for li1 to 100%
+[INFO FLW-0001] Setting global routing adjustment for met1 to 40.0%
+[INFO FLW-0001] Setting global routing adjustment for met2 to 40.0%
+[INFO FLW-0001] Setting global routing adjustment for met3 to 30.0%
+[INFO FLW-0001] Setting global routing adjustment for met4 to 30.0%
+[INFO FLW-0001] Setting global routing adjustment for met5 to 30.0%
+Global connection rules: 2
+  Instances: ".*" with pins "VPWR" connect to "VDD"
+  Instances: ".*" with pins "VGND" connect to "VSS"
+Loading global connect configuration: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/libs/sky130hd/apr/openroad/global_connect.tcl
+Global connection rules: 2
+  Instances: ".*" with pins "VPWR" connect to "VDD"
+  Instances: ".*" with pins "VGND" connect to "VSS"
+[WARNING IFP-0028] Core area lower left (10.000, 10.000) snapped to (10.120, 10.880).
+[INFO IFP-0001] Added 359 rows of 2130 site unithd.
+Floorplan information:
+  Die area: (0.0, 0.0) - (1000.0, 1000.0)
+  Core area: (10.12, 10.88) - (989.92, 987.36)
+[INFO FLW-0001] Creating default routing tracks
+[INFO RSZ-0026] Removed 521 buffers.
+Removed 0 unused instances and 0 unused nets.
+Writing database: outputs/picorv32_top.odb.gz
+Writing DEF: outputs/picorv32_top.def.gz
+Writing netlist: outputs/picorv32_top.vg
+Writing LEC netlist: outputs/picorv32_top.lec.vg
+Writing SDC: outputs/picorv32_top.sdc
+SC_METRIC: report_checks -path_delay max
+Startpoint: _8936_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: pcpi_rs1[19]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+Corner: slow
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ _8936_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   254    1.25   39.58   30.71   30.71 ^ _8936_/Q (sky130_fd_sc_hd__dfxtp_1)
+                                         _0000_ (net)
+                 39.58    0.00   30.71 ^ _5985_/A (sky130_fd_sc_hd__inv_1)
+    14    0.03    5.36   15.24   45.95 v _5985_/Y (sky130_fd_sc_hd__inv_1)
+                                         _1840_ (net)
+                  5.36    0.00   45.95 v _7074_/B1 (sky130_fd_sc_hd__a21oi_1)
+     1    0.00    0.80    3.12   49.07 ^ _7074_/Y (sky130_fd_sc_hd__a21oi_1)
+                                         _2850_ (net)
+                  0.80    0.00   49.07 ^ _7075_/A2 (sky130_fd_sc_hd__a21oi_1)
+     1    0.00    0.58    0.47   49.53 v _7075_/Y (sky130_fd_sc_hd__a21oi_1)
+                                         _2851_ (net)
+                  0.58    0.00   49.53 v _7077_/A2 (sky130_fd_sc_hd__a22oi_1)
+     1    0.00    0.44    0.86   50.39 ^ _7077_/Y (sky130_fd_sc_hd__a22oi_1)
+                                         _2853_ (net)
+                  0.44    0.00   50.39 ^ _7084_/A1 (sky130_fd_sc_hd__mux4_2)
+     1    0.00    0.17    0.87   51.26 ^ _7084_/X (sky130_fd_sc_hd__mux4_2)
+                                         _2860_ (net)
+                  0.17    0.00   51.26 ^ _7085_/B (sky130_fd_sc_hd__nor2_1)
+     1    0.00    0.10    0.12   51.38 v _7085_/Y (sky130_fd_sc_hd__nor2_1)
+                                         _2861_ (net)
+                  0.10    0.00   51.38 v _7089_/B1 (sky130_fd_sc_hd__a211oi_1)
+     1    0.00    0.56    0.75   52.13 ^ _7089_/Y (sky130_fd_sc_hd__a211oi_1)
+                                         _2865_ (net)
+                  0.56    0.00   52.13 ^ _7090_/B1 (sky130_fd_sc_hd__o21ai_0)
+     1    0.00    0.32    0.38   52.51 v _7090_/Y (sky130_fd_sc_hd__o21ai_0)
+                                         _4375_ (net)
+                  0.32    0.00   52.51 v pcpi_rs1[19]$_DFFE_PP_/D (sky130_fd_sc_hd__edfxtp_1)
+                                 52.51   data arrival time
+
+                  0.00   25.00   25.00   clock clk (rise edge)
+                          0.00   25.00   clock network delay (ideal)
+                          0.00   25.00   clock reconvergence pessimism
+                                 25.00 ^ pcpi_rs1[19]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+                         -1.53   23.47   library setup time
+                                 23.47   data required time
+-----------------------------------------------------------------------------
+                                 23.47   data required time
+                                -52.51   data arrival time
+-----------------------------------------------------------------------------
+                                -29.04   slack (VIOLATED)
+
+
+SC_METRIC: setupslack
+worst slack max -29.04
+SC_METRIC: tns
+tns max -1864.09
+SC_METRIC: unconstrained
+Startpoint: clk (clock source 'clk')
+Endpoint: sram/clk0 (internal pin)
+Path Group: unconstrained
+Path Type: max
+Corner: fast
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+  1576    2.90    0.00    0.00   12.50 v clk (in)
+                                         clk (net)
+                  0.00    0.00   12.50 v sram/clk0 (sky130_sram_2kbyte_1rw1r_32x512_8)
+                                 12.50   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+SC_METRIC: floating nets
+Reporting floating nets: reports/floating_nets.rpt
+SC_METRIC: overdriven nets
+Reporting overdriven nets: reports/overdriven_nets.rpt
+Reporting overdriven nets: reports/overdriven_nets_with_parallel.rpt
+Clock                   Period          Waveform
+----------------------------------------------------
+clk                      25.00        0.00     12.50
+SC_METRIC: power
+Power for corner: fast
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             3.55e-03   1.30e-04   4.68e-05   3.72e-03  67.0%
+Combinational          1.59e-03   2.08e-04   3.01e-05   1.83e-03  33.0%
+Clock                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  5.14e-03   3.37e-04   7.69e-05   5.55e-03 100.0%
+                          92.5%       6.1%       1.4%
+Power for corner: slow
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             1.34e-03   5.64e-05   5.94e-10   1.39e-03  84.9%
+Combinational          1.58e-04   8.94e-05   6.42e-10   2.48e-04  15.1%
+Clock                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  1.50e-03   1.46e-04   1.24e-09   1.64e-03 100.0%
+                          91.1%       8.9%       0.0%
+Power for corner: typical
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             2.95e-03   1.05e-04   1.36e-08   3.06e-03  83.8%
+Combinational          4.22e-04   1.70e-04   1.08e-08   5.92e-04  16.2%
+Clock                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  3.37e-03   2.75e-04   2.44e-08   3.65e-03 100.0%
+                          92.5%       7.5%       0.0%
+SC_METRIC: cellarea
+Design area 360968 um^2 38% utilization.
+Cell type report:                       Count       Area
+  Macro                                     1  284538.47
+  Inverter                                 95     356.59
+  Sequential cell                        1574   44082.28
+  Multi-Input combinational cell         4035   31990.68
+  Total                                  5705  360968.03
+
+Cell instance report:
+  sky130_sram_2kbyte_1rw1r_32x512_8         1  284538.47
+  sky130_fd_sc_hd__a2111oi_0                1       8.76
+  sky130_fd_sc_hd__a211o_1                 10      87.58
+  sky130_fd_sc_hd__a211oi_1                26     195.19
+  sky130_fd_sc_hd__a211oi_2                 3      37.54
+  sky130_fd_sc_hd__a21bo_2                  1      10.01
+  sky130_fd_sc_hd__a21boi_0                 2      15.01
+  sky130_fd_sc_hd__a21o_1                  58     435.42
+  sky130_fd_sc_hd__a21oi_1                310    1551.49
+  sky130_fd_sc_hd__a221o_1                  5      50.05
+  sky130_fd_sc_hd__a221oi_1                21     183.93
+  sky130_fd_sc_hd__a222oi_1                39     390.37
+  sky130_fd_sc_hd__a22o_1                  30     262.75
+  sky130_fd_sc_hd__a22oi_1                 48     360.35
+  sky130_fd_sc_hd__a311o_1                  7      70.07
+  sky130_fd_sc_hd__a311oi_1                16     140.13
+  sky130_fd_sc_hd__a311oi_2                 2      30.03
+  sky130_fd_sc_hd__a31o_1                   5      43.79
+  sky130_fd_sc_hd__a31oi_1                 60     375.36
+  sky130_fd_sc_hd__a32o_1                   8      80.08
+  sky130_fd_sc_hd__a32oi_1                  3      26.28
+  sky130_fd_sc_hd__a41o_1                   2      20.02
+  sky130_fd_sc_hd__a41oi_1                  1       8.76
+  sky130_fd_sc_hd__and2_0                  25     156.40
+  sky130_fd_sc_hd__and2_1                  60     375.36
+  sky130_fd_sc_hd__and3_1                  49     306.54
+  sky130_fd_sc_hd__and4_1                  29     253.99
+  sky130_fd_sc_hd__clkinv_1                 1       3.75
+  sky130_fd_sc_hd__conb_1                   2       7.51
+  sky130_fd_sc_hd__dfxtp_1                318    6366.11
+  sky130_fd_sc_hd__edfxtp_1              1256   37716.17
+  sky130_fd_sc_hd__inv_1                   91     341.58
+  sky130_fd_sc_hd__inv_2                    3      11.26
+  sky130_fd_sc_hd__maj3_1                  13     130.12
+  sky130_fd_sc_hd__maj3_2                   6      67.56
+  sky130_fd_sc_hd__mux2_2                  46     518.00
+  sky130_fd_sc_hd__mux2i_1                 80     800.77
+  sky130_fd_sc_hd__mux4_2                 529   11913.93
+  sky130_fd_sc_hd__nand2_1                531    1993.16
+  sky130_fd_sc_hd__nand2b_1                45     281.52
+  sky130_fd_sc_hd__nand3_1                 74     370.36
+  sky130_fd_sc_hd__nand3b_1                 9      67.56
+  sky130_fd_sc_hd__nand4_1                 23     143.89
+  sky130_fd_sc_hd__nand4b_1                 1       8.76
+  sky130_fd_sc_hd__nor2_1                 598    2244.65
+  sky130_fd_sc_hd__nor2b_1                 34     212.70
+  sky130_fd_sc_hd__nor3_1                 122     610.59
+  sky130_fd_sc_hd__nor3b_1                  3      22.52
+  sky130_fd_sc_hd__nor4_1                  24     150.14
+  sky130_fd_sc_hd__nor4b_1                  3      26.28
+  sky130_fd_sc_hd__o2111ai_1                1       8.76
+  sky130_fd_sc_hd__o211a_1                  1      10.01
+  sky130_fd_sc_hd__o211ai_1                31     232.72
+  sky130_fd_sc_hd__o21a_1                  32     240.23
+  sky130_fd_sc_hd__o21ai_0                550    2752.64
+  sky130_fd_sc_hd__o21ai_1                  5      25.02
+  sky130_fd_sc_hd__o21bai_1                 4      30.03
+  sky130_fd_sc_hd__o221a_2                  2      22.52
+  sky130_fd_sc_hd__o221ai_1                46     402.89
+  sky130_fd_sc_hd__o22a_1                   3      26.28
+  sky130_fd_sc_hd__o22ai_1                 36     225.22
+  sky130_fd_sc_hd__o2bb2ai_1                2      17.52
+  sky130_fd_sc_hd__o311a_1                  1      10.01
+  sky130_fd_sc_hd__o311ai_0                21     183.93
+  sky130_fd_sc_hd__o311ai_1                 4      35.03
+  sky130_fd_sc_hd__o311ai_2                 2      32.53
+  sky130_fd_sc_hd__o31a_1                   4      35.03
+  sky130_fd_sc_hd__o31ai_1                 30     225.22
+  sky130_fd_sc_hd__o32a_1                   2      20.02
+  sky130_fd_sc_hd__o32ai_1                 14     122.62
+  sky130_fd_sc_hd__o41ai_1                  1       8.76
+  sky130_fd_sc_hd__or2_1                   36     225.22
+  sky130_fd_sc_hd__or3_1                   28     175.17
+  sky130_fd_sc_hd__or3b_2                   3      26.28
+  sky130_fd_sc_hd__or4_1                   11      82.58
+  sky130_fd_sc_hd__or4b_2                   1      10.01
+  sky130_fd_sc_hd__xnor2_1                132    1156.11
+  sky130_fd_sc_hd__xnor2_2                  1      16.27
+  sky130_fd_sc_hd__xor2_1                  67     586.81

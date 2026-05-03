@@ -1,0 +1,1829 @@
+OpenROAD v2.0-27941-gf9f3050fe8 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 20 thread(s).
+[INFO FLW-0001] Defining timing corners: fast slow typical
+Reading liberty file for fast: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/libs/sky130hd/nldm/sky130_fd_sc_hd__ff_100C_1v95.lib.gz
+Reading liberty file for slow: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/libs/sky130hd/nldm/sky130_fd_sc_hd__ss_n40C_1v40.lib.gz
+Reading liberty file for typical: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/libs/sky130hd/nldm/sky130_fd_sc_hd__tt_025C_1v80.lib.gz
+Reading ODB: inputs/picorv32_top.odb.gz
+Reading SDC: inputs/picorv32_top.sdc
+[INFO FLW-0001] Timing path groups: clk asynchronous {path delay} {gated clock} unconstrained
+[INFO FLW-0001] Sourcing parasitic estimation from: /home/arthur/ECE507/SRAM/build/picorv32_top/job0/route.detailed/0/inputs/sc_parasitics.tcl
+[INFO FLW-0001] Using met5 for clock parasitics estimation
+[INFO FLW-0001] Using met3 for signal parasitics estimation
+[INFO FLW-0001] Setting global routing adjustment for li1 to 100%
+[INFO FLW-0001] Setting global routing adjustment for met1 to 40.0%
+[INFO FLW-0001] Setting global routing adjustment for met2 to 40.0%
+[INFO FLW-0001] Setting global routing adjustment for met3 to 30.0%
+[INFO FLW-0001] Setting global routing adjustment for met4 to 30.0%
+[INFO FLW-0001] Setting global routing adjustment for met5 to 30.0%
+Global connection rules: 2
+  Instances: ".*" with pins "VPWR" connect to "VDD"
+  Instances: ".*" with pins "VGND" connect to "VSS"
+detailed_route siliconcompiler arguments: -drc_report_iter_step 5
+[INFO DRT-0149] Reading tech and libs.
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+
+Units:                1000
+Number of layers:     13
+Number of macros:     438
+Number of vias:       29
+Number of viarulegen: 25
+
+[INFO DRT-0150] Reading design.
+[WARNING DRT-0120] Large net net957 has 109 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net net952 has 157 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net net953 has 115 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net net956 has 118 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net resetn has 128 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net net960 has 130 pins which may impact routing performance. Consider optimization.
+
+Design:                   picorv32_top
+Die area:                 ( 0 0 ) ( 1000000 1000000 )
+Number of track patterns: 12
+Number of DEF vias:       0
+Number of components:     89739
+Number of terminals:      308
+Number of snets:          2
+Number of nets:           6457
+
+[INFO DRT-0167] List of default vias:
+  Layer via
+    default via: M1M2_PR
+  Layer via2
+    default via: M2M3_PR
+  Layer via3
+    default via: M3M4_PR
+  Layer via4
+    default via: M4M5_PR
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+[INFO DRT-0164] Number of unique instances = 196.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0024]   Complete FR_MASTERSLICE.
+[INFO DRT-0024]   Complete licon.
+[INFO DRT-0024]   Complete li1.
+[INFO DRT-0024]   Complete mcon.
+[INFO DRT-0024]   Complete met1.
+[INFO DRT-0024]   Complete via.
+[INFO DRT-0024]   Complete met2.
+[INFO DRT-0024]   Complete via2.
+[INFO DRT-0024]   Complete met3.
+[INFO DRT-0024]   Complete via3.
+[INFO DRT-0024]   Complete met4.
+[INFO DRT-0024]   Complete via4.
+[INFO DRT-0024]   Complete met5.
+[INFO DRT-0033] FR_MASTERSLICE shape region query size = 0.
+[INFO DRT-0033] licon shape region query size = 0.
+[INFO DRT-0033] li1 shape region query size = 419403.
+[INFO DRT-0033] mcon shape region query size = 17646.
+[INFO DRT-0033] met1 shape region query size = 217729.
+[INFO DRT-0033] via shape region query size = 45550.
+[INFO DRT-0033] met2 shape region query size = 27481.
+[INFO DRT-0033] via2 shape region query size = 36440.
+[INFO DRT-0033] met3 shape region query size = 27541.
+[INFO DRT-0033] via3 shape region query size = 36440.
+[INFO DRT-0033] met4 shape region query size = 11285.
+[INFO DRT-0033] via4 shape region query size = 1817.
+[INFO DRT-0033] met5 shape region query size = 1961.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0076]   Complete 1000 pins.
+[INFO DRT-0078]   Complete 1263 pins.
+[INFO DRT-0079]   Complete 100 unique inst patterns.
+[INFO DRT-0081]   Complete 195 unique inst patterns.
+[INFO DRT-0084]   Complete 4591 groups.
+#scanned instances     = 89739
+#unique  instances     = 196
+#stdCellGenAp          = 5725
+#stdCellValidPlanarAp  = 61
+#stdCellValidViaAp     = 4518
+#stdCellPinNoAp        = 0
+#stdCellPinCnt         = 24477
+#instTermValidViaApCnt = 0
+#macroGenAp            = 195
+#macroValidPlanarAp    = 195
+#macroValidViaAp       = 0
+#macroNoAp             = 0
+[INFO DRT-0166] Complete pin access.
+[INFO DRT-0267] cpu time = 00:05:34, elapsed time = 00:00:20, memory = 311.24 (MB), peak = 311.50 (MB)
+
+[INFO DRT-0157] Number of guides:     62635
+
+[INFO DRT-0169] Post process guides.
+[INFO DRT-0176] GCELLGRID X 0 DO 144 STEP 6900 ;
+[INFO DRT-0177] GCELLGRID Y 0 DO 144 STEP 6900 ;
+[INFO DRT-0028]   Complete FR_MASTERSLICE.
+[INFO DRT-0028]   Complete licon.
+[INFO DRT-0028]   Complete li1.
+[INFO DRT-0028]   Complete mcon.
+[INFO DRT-0028]   Complete met1.
+[INFO DRT-0028]   Complete via.
+[INFO DRT-0028]   Complete met2.
+[INFO DRT-0028]   Complete via2.
+[INFO DRT-0028]   Complete met3.
+[INFO DRT-0028]   Complete via3.
+[INFO DRT-0028]   Complete met4.
+[INFO DRT-0028]   Complete via4.
+[INFO DRT-0028]   Complete met5.
+[INFO DRT-0178] Init guide query.
+[INFO DRT-0035]   Complete FR_MASTERSLICE (guide).
+[INFO DRT-0035]   Complete licon (guide).
+[INFO DRT-0035]   Complete li1 (guide).
+[INFO DRT-0035]   Complete mcon (guide).
+[INFO DRT-0035]   Complete met1 (guide).
+[INFO DRT-0035]   Complete via (guide).
+[INFO DRT-0035]   Complete met2 (guide).
+[INFO DRT-0035]   Complete via2 (guide).
+[INFO DRT-0035]   Complete met3 (guide).
+[INFO DRT-0035]   Complete via3 (guide).
+[INFO DRT-0035]   Complete met4 (guide).
+[INFO DRT-0035]   Complete via4 (guide).
+[INFO DRT-0035]   Complete met5 (guide).
+[INFO DRT-0036] FR_MASTERSLICE guide region query size = 0.
+[INFO DRT-0036] licon guide region query size = 0.
+[INFO DRT-0036] li1 guide region query size = 19437.
+[INFO DRT-0036] mcon guide region query size = 0.
+[INFO DRT-0036] met1 guide region query size = 17802.
+[INFO DRT-0036] via guide region query size = 0.
+[INFO DRT-0036] met2 guide region query size = 10645.
+[INFO DRT-0036] via2 guide region query size = 0.
+[INFO DRT-0036] met3 guide region query size = 2409.
+[INFO DRT-0036] via3 guide region query size = 0.
+[INFO DRT-0036] met4 guide region query size = 688.
+[INFO DRT-0036] via4 guide region query size = 0.
+[INFO DRT-0036] met5 guide region query size = 58.
+[INFO DRT-0179] Init gr pin query.
+[INFO DRT-0267] cpu time = 00:00:01, elapsed time = 00:00:00, memory = 331.08 (MB), peak = 331.08 (MB)
+[INFO DRT-0185] Post process initialize RPin region query.
+[INFO DRT-0181] Start track assignment.
+[INFO DRT-0184] Done with 30770 vertical wires in 3 frboxes and 20269 horizontal wires in 3 frboxes.
+[INFO DRT-0186] Done with 3301 vertical wires in 3 frboxes and 5329 horizontal wires in 3 frboxes.
+[INFO DRT-0182] Complete track assignment.
+[INFO DRT-0267] cpu time = 00:00:14, elapsed time = 00:00:06, memory = 608.46 (MB), peak = 623.46 (MB)
+[INFO DRT-0187] Start routing data preparation.
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 608.62 (MB), peak = 623.46 (MB)
+[INFO DRT-0194] Start detail routing.
+[INFO DRT-0195] Start 0th optimization iteration.
+    Completing 10% with 0 violations.
+    elapsed time = 00:00:00, memory = 875.95 (MB).
+    Completing 20% with 0 violations.
+    elapsed time = 00:00:06, memory = 1152.53 (MB).
+    Completing 30% with 874 violations.
+    elapsed time = 00:00:14, memory = 873.01 (MB).
+    Completing 40% with 874 violations.
+    elapsed time = 00:00:15, memory = 1167.86 (MB).
+    Completing 50% with 874 violations.
+    elapsed time = 00:00:22, memory = 1243.48 (MB).
+    Completing 60% with 1599 violations.
+    elapsed time = 00:00:29, memory = 1298.84 (MB).
+    Completing 70% with 1599 violations.
+    elapsed time = 00:00:36, memory = 1388.37 (MB).
+    Completing 80% with 2511 violations.
+    elapsed time = 00:00:47, memory = 1412.18 (MB).
+    Completing 90% with 2511 violations.
+    elapsed time = 00:00:49, memory = 1510.46 (MB).
+    Completing 100% with 3260 violations.
+    elapsed time = 00:01:07, memory = 1447.70 (MB).
+[INFO DRT-0199]   Number of violations = 4133.
+Viol/Layer         li1   mcon   met1    via   met2   met3   via3   met4   via4   met5
+Cut Spacing          0     15      0      0      0      0      0      0      0      0
+Metal Spacing        0      0    902      0    118     18      0      3      0      5
+Min Hole             0      0      1      0      0      0      0      0      0      0
+Recheck              6      0    554      0    266     26      0     18      0      3
+Short                0      0   1974      2    182     30      2      6      1      1
+[INFO DRT-0267] cpu time = 00:13:12, elapsed time = 00:01:08, memory = 1717.70 (MB), peak = 1717.70 (MB)
+Total wire length = 369592 um.
+Total wire length on LAYER li1 = 0 um.
+Total wire length on LAYER met1 = 116992 um.
+Total wire length on LAYER met2 = 148321 um.
+Total wire length on LAYER met3 = 68404 um.
+Total wire length on LAYER met4 = 35002 um.
+Total wire length on LAYER met5 = 872 um.
+Total number of vias = 55984.
+Up-via summary (total 55984):
+
+------------------------
+ FR_MASTERSLICE        0
+            li1    24200
+           met1    27174
+           met2     3420
+           met3     1097
+           met4       93
+------------------------
+               55984
+
+
+[INFO DRT-0195] Start 1st optimization iteration.
+    Completing 10% with 4133 violations.
+    elapsed time = 00:00:00, memory = 1749.42 (MB).
+    Completing 20% with 4133 violations.
+    elapsed time = 00:00:04, memory = 1786.76 (MB).
+    Completing 30% with 3601 violations.
+    elapsed time = 00:00:14, memory = 1752.35 (MB).
+    Completing 40% with 3601 violations.
+    elapsed time = 00:00:16, memory = 1823.29 (MB).
+    Completing 50% with 3601 violations.
+    elapsed time = 00:00:22, memory = 1823.29 (MB).
+    Completing 60% with 3063 violations.
+    elapsed time = 00:00:28, memory = 1800.65 (MB).
+    Completing 70% with 3063 violations.
+    elapsed time = 00:00:33, memory = 1833.93 (MB).
+    Completing 80% with 2434 violations.
+    elapsed time = 00:00:43, memory = 1774.48 (MB).
+    Completing 90% with 2434 violations.
+    elapsed time = 00:00:46, memory = 1884.95 (MB).
+    Completing 100% with 2039 violations.
+    elapsed time = 00:00:58, memory = 1791.07 (MB).
+[INFO DRT-0199]   Number of violations = 2039.
+Viol/Layer        mcon   met1   met2   met3   met4
+Cut Spacing          5      0      0      0      0
+Metal Spacing        0    636     50      7      3
+Short                0   1283     43     11      1
+[INFO DRT-0267] cpu time = 00:12:11, elapsed time = 00:00:59, memory = 1794.04 (MB), peak = 1885.11 (MB)
+Total wire length = 367329 um.
+Total wire length on LAYER li1 = 0 um.
+Total wire length on LAYER met1 = 115889 um.
+Total wire length on LAYER met2 = 147316 um.
+Total wire length on LAYER met3 = 68454 um.
+Total wire length on LAYER met4 = 34831 um.
+Total wire length on LAYER met5 = 837 um.
+Total number of vias = 55481.
+Up-via summary (total 55481):
+
+------------------------
+ FR_MASTERSLICE        0
+            li1    24160
+           met1    26743
+           met2     3435
+           met3     1058
+           met4       85
+------------------------
+               55481
+
+
+[INFO DRT-0195] Start 2nd optimization iteration.
+    Completing 10% with 2039 violations.
+    elapsed time = 00:00:00, memory = 1794.04 (MB).
+    Completing 20% with 2039 violations.
+    elapsed time = 00:00:01, memory = 1869.36 (MB).
+    Completing 30% with 1907 violations.
+    elapsed time = 00:00:12, memory = 1820.63 (MB).
+    Completing 40% with 1907 violations.
+    elapsed time = 00:00:16, memory = 1823.13 (MB).
+    Completing 50% with 1907 violations.
+    elapsed time = 00:00:29, memory = 1826.88 (MB).
+    Completing 60% with 1823 violations.
+    elapsed time = 00:00:29, memory = 1826.88 (MB).
+    Completing 70% with 1823 violations.
+    elapsed time = 00:00:32, memory = 1896.41 (MB).
+    Completing 80% with 1806 violations.
+    elapsed time = 00:00:43, memory = 1828.95 (MB).
+    Completing 90% with 1806 violations.
+    elapsed time = 00:00:48, memory = 1860.98 (MB).
+    Completing 100% with 1746 violations.
+    elapsed time = 00:00:59, memory = 1832.09 (MB).
+[INFO DRT-0199]   Number of violations = 1746.
+Viol/Layer        mcon   met1   met2   met3   met4
+Cut Spacing          5      0      0      0      0
+Metal Spacing        0    549     38      1      2
+Short                0   1100     49      2      0
+[INFO DRT-0267] cpu time = 00:12:00, elapsed time = 00:01:00, memory = 1835.06 (MB), peak = 1898.44 (MB)
+Total wire length = 366812 um.
+Total wire length on LAYER li1 = 0 um.
+Total wire length on LAYER met1 = 116011 um.
+Total wire length on LAYER met2 = 147192 um.
+Total wire length on LAYER met3 = 68030 um.
+Total wire length on LAYER met4 = 34718 um.
+Total wire length on LAYER met5 = 859 um.
+Total number of vias = 55300.
+Up-via summary (total 55300):
+
+------------------------
+ FR_MASTERSLICE        0
+            li1    24163
+           met1    26595
+           met2     3410
+           met3     1047
+           met4       85
+------------------------
+               55300
+
+
+[INFO DRT-0195] Start 3rd optimization iteration.
+    Completing 10% with 1746 violations.
+    elapsed time = 00:00:00, memory = 1835.06 (MB).
+    Completing 20% with 1746 violations.
+    elapsed time = 00:00:02, memory = 1907.71 (MB).
+    Completing 30% with 1391 violations.
+    elapsed time = 00:00:20, memory = 1841.02 (MB).
+    Completing 40% with 1391 violations.
+    elapsed time = 00:00:21, memory = 1943.67 (MB).
+    Completing 50% with 1391 violations.
+    elapsed time = 00:00:25, memory = 1943.67 (MB).
+    Completing 60% with 1078 violations.
+    elapsed time = 00:00:36, memory = 1846.94 (MB).
+    Completing 70% with 1078 violations.
+    elapsed time = 00:00:37, memory = 1912.88 (MB).
+    Completing 80% with 582 violations.
+    elapsed time = 00:00:54, memory = 1852.32 (MB).
+    Completing 90% with 582 violations.
+    elapsed time = 00:00:55, memory = 1889.35 (MB).
+    Completing 100% with 258 violations.
+    elapsed time = 00:01:08, memory = 1864.13 (MB).
+[INFO DRT-0199]   Number of violations = 258.
+Viol/Layer        mcon   met1   met2   met3
+Cut Spacing          1      0      0      0
+Metal Spacing        0     88     16      1
+Min Hole             0      1      0      0
+Short                0    141     10      0
+[INFO DRT-0267] cpu time = 00:09:16, elapsed time = 00:01:09, memory = 1864.13 (MB), peak = 1962.11 (MB)
+Total wire length = 366811 um.
+Total wire length on LAYER li1 = 0 um.
+Total wire length on LAYER met1 = 113679 um.
+Total wire length on LAYER met2 = 147445 um.
+Total wire length on LAYER met3 = 70028 um.
+Total wire length on LAYER met4 = 34767 um.
+Total wire length on LAYER met5 = 890 um.
+Total number of vias = 56009.
+Up-via summary (total 56009):
+
+------------------------
+ FR_MASTERSLICE        0
+            li1    24169
+           met1    26934
+           met2     3770
+           met3     1053
+           met4       83
+------------------------
+               56009
+
+
+[INFO DRT-0195] Start 4th optimization iteration.
+    Completing 10% with 258 violations.
+    elapsed time = 00:00:00, memory = 1864.13 (MB).
+    Completing 20% with 258 violations.
+    elapsed time = 00:00:00, memory = 1864.13 (MB).
+    Completing 30% with 165 violations.
+    elapsed time = 00:00:05, memory = 1864.13 (MB).
+    Completing 40% with 165 violations.
+    elapsed time = 00:00:05, memory = 1864.13 (MB).
+    Completing 50% with 165 violations.
+    elapsed time = 00:00:05, memory = 1864.13 (MB).
+    Completing 60% with 131 violations.
+    elapsed time = 00:00:10, memory = 1865.22 (MB).
+    Completing 70% with 131 violations.
+    elapsed time = 00:00:10, memory = 1865.22 (MB).
+    Completing 80% with 22 violations.
+    elapsed time = 00:00:17, memory = 1865.31 (MB).
+    Completing 90% with 22 violations.
+    elapsed time = 00:00:17, memory = 1865.31 (MB).
+    Completing 100% with 17 violations.
+    elapsed time = 00:00:22, memory = 1865.31 (MB).
+[INFO DRT-0199]   Number of violations = 17.
+Viol/Layer        met1
+Metal Spacing       10
+Min Hole             1
+Short                6
+[INFO DRT-0267] cpu time = 00:01:26, elapsed time = 00:00:22, memory = 1865.31 (MB), peak = 1962.11 (MB)
+Total wire length = 366798 um.
+Total wire length on LAYER li1 = 0 um.
+Total wire length on LAYER met1 = 113579 um.
+Total wire length on LAYER met2 = 147443 um.
+Total wire length on LAYER met3 = 70085 um.
+Total wire length on LAYER met4 = 34799 um.
+Total wire length on LAYER met5 = 890 um.
+Total number of vias = 56045.
+Up-via summary (total 56045):
+
+------------------------
+ FR_MASTERSLICE        0
+            li1    24170
+           met1    26971
+           met2     3766
+           met3     1055
+           met4       83
+------------------------
+               56045
+
+
+[INFO DRT-0195] Start 5th optimization iteration.
+    Completing 10% with 17 violations.
+    elapsed time = 00:00:00, memory = 1865.31 (MB).
+    Completing 20% with 17 violations.
+    elapsed time = 00:00:00, memory = 1865.31 (MB).
+    Completing 30% with 16 violations.
+    elapsed time = 00:00:01, memory = 1865.31 (MB).
+    Completing 40% with 16 violations.
+    elapsed time = 00:00:01, memory = 1865.31 (MB).
+    Completing 50% with 16 violations.
+    elapsed time = 00:00:01, memory = 1865.31 (MB).
+    Completing 60% with 16 violations.
+    elapsed time = 00:00:01, memory = 1865.31 (MB).
+    Completing 70% with 16 violations.
+    elapsed time = 00:00:01, memory = 1865.31 (MB).
+    Completing 80% with 16 violations.
+    elapsed time = 00:00:01, memory = 1865.31 (MB).
+    Completing 90% with 16 violations.
+    elapsed time = 00:00:01, memory = 1865.31 (MB).
+    Completing 100% with 8 violations.
+    elapsed time = 00:00:06, memory = 1865.31 (MB).
+[INFO DRT-0199]   Number of violations = 8.
+Viol/Layer        met1
+Metal Spacing        2
+Short                6
+[INFO DRT-0267] cpu time = 00:00:09, elapsed time = 00:00:06, memory = 1865.47 (MB), peak = 1962.11 (MB)
+Total wire length = 366785 um.
+Total wire length on LAYER li1 = 0 um.
+Total wire length on LAYER met1 = 113578 um.
+Total wire length on LAYER met2 = 147445 um.
+Total wire length on LAYER met3 = 70072 um.
+Total wire length on LAYER met4 = 34799 um.
+Total wire length on LAYER met5 = 890 um.
+Total number of vias = 56046.
+Up-via summary (total 56046):
+
+------------------------
+ FR_MASTERSLICE        0
+            li1    24171
+           met1    26973
+           met2     3764
+           met3     1055
+           met4       83
+------------------------
+               56046
+
+
+[INFO DRT-0195] Start 6th stubborn tiles iteration.
+    Completing 10% with 8 violations.
+    elapsed time = 00:00:07, memory = 2015.47 (MB).
+    Completing 20% with 8 violations.
+    elapsed time = 00:00:10, memory = 1985.30 (MB).
+    Completing 30% with 8 violations.
+    elapsed time = 00:00:12, memory = 1949.30 (MB).
+    Completing 40% with 8 violations.
+    elapsed time = 00:00:13, memory = 1954.14 (MB).
+    Completing 50% with 8 violations.
+    elapsed time = 00:00:15, memory = 1952.61 (MB).
+    Completing 60% with 8 violations.
+    elapsed time = 00:00:15, memory = 1959.48 (MB).
+    Completing 70% with 8 violations.
+    elapsed time = 00:00:17, memory = 1925.84 (MB).
+    Completing 80% with 8 violations.
+    elapsed time = 00:00:18, memory = 1887.55 (MB).
+    Completing 90% with 8 violations.
+    elapsed time = 00:00:19, memory = 1896.30 (MB).
+    Completing 100% with 0 violations.
+    elapsed time = 00:00:26, memory = 1888.61 (MB).
+[INFO DRT-0199]   Number of violations = 0.
+[INFO DRT-0267] cpu time = 00:06:04, elapsed time = 00:00:26, memory = 1888.61 (MB), peak = 2015.47 (MB)
+Total wire length = 366783 um.
+Total wire length on LAYER li1 = 0 um.
+Total wire length on LAYER met1 = 113572 um.
+Total wire length on LAYER met2 = 147442 um.
+Total wire length on LAYER met3 = 70078 um.
+Total wire length on LAYER met4 = 34799 um.
+Total wire length on LAYER met5 = 890 um.
+Total number of vias = 56045.
+Up-via summary (total 56045):
+
+------------------------
+ FR_MASTERSLICE        0
+            li1    24171
+           met1    26969
+           met2     3767
+           met3     1055
+           met4       83
+------------------------
+               56045
+
+
+[INFO DRT-0198] Complete detail routing.
+Total wire length = 366783 um.
+Total wire length on LAYER li1 = 0 um.
+Total wire length on LAYER met1 = 113572 um.
+Total wire length on LAYER met2 = 147442 um.
+Total wire length on LAYER met3 = 70078 um.
+Total wire length on LAYER met4 = 34799 um.
+Total wire length on LAYER met5 = 890 um.
+Total number of vias = 56045.
+Up-via summary (total 56045):
+
+------------------------
+ FR_MASTERSLICE        0
+            li1    24171
+           met1    26969
+           met2     3767
+           met3     1055
+           met4       83
+------------------------
+               56045
+
+
+[INFO DRT-0267] cpu time = 00:54:22, elapsed time = 00:05:13, memory = 1888.61 (MB), peak = 2015.47 (MB)
+
+[INFO DRT-0180] Post processing.
+[INFO FLW-0001] Deleted 0 routing obstructions
+[WARNING EST-0026] Missing route to pin _5797_/S0 in net net957.
+[WARNING EST-0026] Missing route to pin _5792_/S0 in net net957.
+[WARNING EST-0026] Missing route to pin _5729_/S0 in net net957.
+[WARNING EST-0026] Missing route to pin _5264_/S0 in net net957.
+[WARNING EST-0026] Missing route to pin _5797_/S0 in net net957.
+[WARNING EST-0026] Missing route to pin _5792_/S0 in net net957.
+[WARNING EST-0026] Missing route to pin _5729_/S0 in net net957.
+[WARNING EST-0026] Missing route to pin _5264_/S0 in net net957.
+[WARNING EST-0026] Missing route to pin _5797_/S0 in net net957.
+[WARNING EST-0026] Missing route to pin _5792_/S0 in net net957.
+[WARNING EST-0026] Missing route to pin _5729_/S0 in net net957.
+[WARNING EST-0026] Missing route to pin _5264_/S0 in net net957.
+[WARNING EST-0026] Missing route to pin _6939_/S0 in net net966.
+[WARNING EST-0026] Missing route to pin _6926_/S0 in net net966.
+[WARNING EST-0026] Missing route to pin _6939_/S0 in net net966.
+[WARNING EST-0026] Missing route to pin _6926_/S0 in net net966.
+[WARNING EST-0026] Missing route to pin _6939_/S0 in net net966.
+[WARNING EST-0026] Missing route to pin _6926_/S0 in net net966.
+[WARNING EST-0026] Missing route to pin _7340_/S0 in net net967.
+[WARNING EST-0026] Missing route to pin _7340_/S0 in net net967.
+[WARNING EST-0026] Missing route to pin _7340_/S0 in net net967.
+[WARNING EST-0026] Missing route to pin _6020_/S0 in net net968.
+[WARNING EST-0026] Missing route to pin _6020_/S0 in net net968.
+[WARNING EST-0026] Missing route to pin _6020_/S0 in net net968.
+[WARNING EST-0026] Missing route to pin _5647_/S0 in net net830.
+[WARNING EST-0026] Missing route to pin _5647_/S0 in net net830.
+[WARNING EST-0026] Missing route to pin _5647_/S0 in net net830.
+[WARNING EST-0026] Missing route to pin _6662_/B1 in net _2449_.
+[WARNING EST-0026] Missing route to pin _6662_/B1 in net _2449_.
+[WARNING EST-0026] Missing route to pin _6662_/B1 in net _2449_.
+[WARNING EST-0026] Missing route to pin _6691_/B1 in net _2476_.
+[WARNING EST-0026] Missing route to pin _6691_/B1 in net _2476_.
+[WARNING EST-0026] Missing route to pin _6691_/B1 in net _2476_.
+[WARNING EST-0026] Missing route to pin _7222_/A1 in net net958.
+[WARNING EST-0026] Missing route to pin _7222_/A1 in net net958.
+[WARNING EST-0026] Missing route to pin _7222_/A1 in net net958.
+[WARNING EST-0026] Missing route to pin _5842_/S0 in net net955.
+[WARNING EST-0026] Missing route to pin _5842_/S0 in net net955.
+[WARNING EST-0026] Missing route to pin _5842_/S0 in net net955.
+[WARNING EST-0026] Missing route to pin _5649_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5561_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5381_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5357_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5345_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5297_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5649_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5561_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5381_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5357_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5345_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5297_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5649_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5561_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5381_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5357_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5345_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _5297_/S0 in net net956.
+[WARNING EST-0026] Missing route to pin _6393_/A1 in net net796.
+[WARNING EST-0026] Missing route to pin _6393_/A1 in net net796.
+[WARNING EST-0026] Missing route to pin _6393_/A1 in net net796.
+[WARNING EST-0026] Missing route to pin mem_la_wdata\[0\]$_DFFE_PP_/Q in net net539.
+[WARNING EST-0026] Missing route to pin mem_la_wdata\[0\]$_DFFE_PP_/Q in net net539.
+[WARNING EST-0026] Missing route to pin mem_la_wdata\[0\]$_DFFE_PP_/Q in net net539.
+[WARNING EST-0026] Missing route to pin _5686_/A2 in net rv32_soc\/cpuregs\[12\]\[12\].
+[WARNING EST-0026] Missing route to pin _5686_/A2 in net rv32_soc\/cpuregs\[12\]\[12\].
+[WARNING EST-0026] Missing route to pin _5686_/A2 in net rv32_soc\/cpuregs\[12\]\[12\].
+[WARNING EST-0026] Missing route to pin _5530_/A2 in net rv32_soc\/cpuregs\[12\]\[20\].
+[WARNING EST-0026] Missing route to pin _5530_/A2 in net rv32_soc\/cpuregs\[12\]\[20\].
+[WARNING EST-0026] Missing route to pin _5530_/A2 in net rv32_soc\/cpuregs\[12\]\[20\].
+[WARNING EST-0026] Missing route to pin _7098_/A2 in net rv32_soc\/cpuregs\[14\]\[18\].
+[WARNING EST-0026] Missing route to pin _7098_/A2 in net rv32_soc\/cpuregs\[14\]\[18\].
+[WARNING EST-0026] Missing route to pin _7098_/A2 in net rv32_soc\/cpuregs\[14\]\[18\].
+[WARNING EST-0026] Missing route to pin _5437_/A2 in net rv32_soc\/cpuregs\[20\]\[25\].
+[WARNING EST-0026] Missing route to pin _5437_/A2 in net rv32_soc\/cpuregs\[20\]\[25\].
+[WARNING EST-0026] Missing route to pin _5437_/A2 in net rv32_soc\/cpuregs\[20\]\[25\].
+[WARNING EST-0026] Missing route to pin _7548_/A2 in net rv32_soc\/cpuregs\[22\]\[1\].
+[WARNING EST-0026] Missing route to pin _7548_/A2 in net rv32_soc\/cpuregs\[22\]\[1\].
+[WARNING EST-0026] Missing route to pin _7548_/A2 in net rv32_soc\/cpuregs\[22\]\[1\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[22\]\[31\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[22\]\[31\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[22\]\[31\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[22\]\[31\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[22\]\[31\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[22\]\[31\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[24\]\[19\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[24\]\[19\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[24\]\[19\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[24\]\[19\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[24\]\[19\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[24\]\[19\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[26\]\[20\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[26\]\[20\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[26\]\[20\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[26\]\[20\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[26\]\[20\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[26\]\[20\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[27\]\[20\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[27\]\[20\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[27\]\[20\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[27\]\[20\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[27\]\[20\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[27\]\[20\].
+[WARNING EST-0026] Missing route to pin _7525_/A2 in net rv32_soc\/cpuregs\[28\]\[2\].
+[WARNING EST-0026] Missing route to pin _7525_/A2 in net rv32_soc\/cpuregs\[28\]\[2\].
+[WARNING EST-0026] Missing route to pin _7525_/A2 in net rv32_soc\/cpuregs\[28\]\[2\].
+[WARNING EST-0026] Missing route to pin _5669_/A2 in net rv32_soc\/cpuregs\[30\]\[13\].
+[WARNING EST-0026] Missing route to pin _5669_/A2 in net rv32_soc\/cpuregs\[30\]\[13\].
+[WARNING EST-0026] Missing route to pin _5669_/A2 in net rv32_soc\/cpuregs\[30\]\[13\].
+[WARNING EST-0026] Missing route to pin _5979_/A2 in net rv32_soc\/cpuregs\[4\]\[31\].
+[WARNING EST-0026] Missing route to pin _5979_/A2 in net rv32_soc\/cpuregs\[4\]\[31\].
+[WARNING EST-0026] Missing route to pin _5979_/A2 in net rv32_soc\/cpuregs\[4\]\[31\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[6\]\[10\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[6\]\[10\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[6\]\[10\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[6\]\[10\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[6\]\[10\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[6\]\[10\].
+[WARNING EST-0026] Missing route to pin _7215_/A2 in net rv32_soc\/cpuregs\[6\]\[14\].
+[WARNING EST-0026] Missing route to pin _7215_/A2 in net rv32_soc\/cpuregs\[6\]\[14\].
+[WARNING EST-0026] Missing route to pin _7215_/A2 in net rv32_soc\/cpuregs\[6\]\[14\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[8\]\[27\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[8\]\[27\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[8\]\[27\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[8\]\[27\].
+[WARNING EST-0026] Missing route to pin rv32_soc\/cpuregs\[8\]\[27\]$_DFFE_PP_/Q in net rv32_soc\/cpuregs\[8\]\[27\].
+[WARNING EST-0026] Missing route to pin _7545_/S0 in net net964.
+[WARNING EST-0026] Missing route to pin _7469_/S0 in net net964.
+[WARNING EST-0026] Missing route to pin _7427_/S0 in net net964.
+[WARNING EST-0026] Missing route to pin _7374_/S0 in net net964.
+[WARNING EST-0026] Missing route to pin _7359_/S0 in net net964.
+[WARNING EST-0026] Missing route to pin _7545_/S0 in net net964.
+[WARNING EST-0026] Missing route to pin _7469_/S0 in net net964.
+[WARNING EST-0026] Missing route to pin _7427_/S0 in net net964.
+[WARNING EST-0026] Missing route to pin _7374_/S0 in net net964.
+[WARNING EST-0026] Missing route to pin _7359_/S0 in net net964.
+[WARNING EST-0026] Missing route to pin _7545_/S0 in net net964.
+[WARNING EST-0026] Missing route to pin _7469_/S0 in net net964.
+[WARNING EST-0026] Missing route to pin _7427_/S0 in net net964.
+[WARNING EST-0026] Missing route to pin _7374_/S0 in net net964.
+[WARNING EST-0026] Missing route to pin _7359_/S0 in net net964.
+[WARNING EST-0026] Missing route to pin _7267_/S0 in net net965.
+[WARNING EST-0026] Missing route to pin _7136_/S0 in net net965.
+[WARNING EST-0026] Missing route to pin _7101_/S0 in net net965.
+[WARNING EST-0026] Missing route to pin _7052_/S0 in net net965.
+[WARNING EST-0026] Missing route to pin _7267_/S0 in net net965.
+[WARNING EST-0026] Missing route to pin _7136_/S0 in net net965.
+[WARNING EST-0026] Missing route to pin _7101_/S0 in net net965.
+[WARNING EST-0026] Missing route to pin _7052_/S0 in net net965.
+[WARNING EST-0026] Missing route to pin _7267_/S0 in net net965.
+[WARNING EST-0026] Missing route to pin _7136_/S0 in net net965.
+[WARNING EST-0026] Missing route to pin _7101_/S0 in net net965.
+[WARNING EST-0026] Missing route to pin _7052_/S0 in net net965.
+Writing database: outputs/picorv32_top.odb.gz
+Writing DEF: outputs/picorv32_top.def.gz
+Writing netlist: outputs/picorv32_top.vg
+Writing LEC netlist: outputs/picorv32_top.lec.vg
+Writing SDC: outputs/picorv32_top.sdc
+SC_METRIC: report_checks -path_delay max
+Startpoint: rv32_soc/latched_store$_SDFFE_PN0P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: rv32_soc/reg_next_pc[31]$_SDFFE_PN0P_
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+Corner: slow
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+     2    0.01    0.00    0.00    0.00 ^ clk (in)
+                                         clk (net)
+                  0.00    0.00    0.00 ^ clkbuf_regs_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     1    0.01    0.11    0.28    0.28 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clk_regs (net)
+                  0.11    0.00    0.28 ^ clkbuf_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.01    0.11    0.34    0.63 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_0_clk_regs (net)
+                  0.11    0.00    0.63 ^ clkbuf_1_1_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02    0.13    0.36    0.99 ^ clkbuf_1_1_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_1_1_0_clk_regs (net)
+                  0.13    0.00    0.99 ^ clkbuf_2_2_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.01    0.11    0.36    1.35 ^ clkbuf_2_2_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_2_2_0_clk_regs (net)
+                  0.11    0.00    1.35 ^ clkbuf_3_4__f_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     8    0.06    0.29    0.49    1.83 ^ clkbuf_3_4__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_3_4__leaf_clk_regs (net)
+                  0.29    0.00    1.83 ^ clkbuf_leaf_56_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+    15    0.04    0.22    0.53    2.37 ^ clkbuf_leaf_56_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_leaf_56_clk_regs (net)
+                  0.22    0.00    2.37 ^ rv32_soc/latched_store$_SDFFE_PN0P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+     6    0.01    0.42    1.53    3.89 ^ rv32_soc/latched_store$_SDFFE_PN0P_/Q (sky130_fd_sc_hd__dfxtp_1)
+                                         net444 (net)
+                  0.42    0.00    3.89 ^ _4945_/A (sky130_fd_sc_hd__and2_0)
+     3    0.01    0.36    0.65    4.54 ^ _4945_/X (sky130_fd_sc_hd__and2_0)
+                                         _0894_ (net)
+                  0.36    0.00    4.54 ^ place833/A (sky130_fd_sc_hd__buf_1)
+    10    0.03    1.20    1.19    5.74 ^ place833/X (sky130_fd_sc_hd__buf_1)
+                                         net833 (net)
+                  1.20    0.00    5.74 ^ _8367_/S (sky130_fd_sc_hd__mux2_1)
+     6    0.02    0.30    2.21    7.95 v _8367_/X (sky130_fd_sc_hd__mux2_1)
+                                         _3875_ (net)
+                  0.30    0.00    7.95 v _8419_/B (sky130_fd_sc_hd__xnor2_1)
+     3    0.01    0.17    0.54    8.49 v _8419_/Y (sky130_fd_sc_hd__xnor2_1)
+                                         _3923_ (net)
+                  0.17    0.00    8.49 v _8424_/A1 (sky130_fd_sc_hd__o211ai_1)
+     2    0.00    0.64    0.79    9.28 ^ _8424_/Y (sky130_fd_sc_hd__o211ai_1)
+                                         _3928_ (net)
+                  0.64    0.00    9.28 ^ _8427_/A3 (sky130_fd_sc_hd__a311oi_1)
+     3    0.00    0.25    0.49    9.78 v _8427_/Y (sky130_fd_sc_hd__a311oi_1)
+                                         _3931_ (net)
+                  0.25    0.00    9.78 v _8431_/A3 (sky130_fd_sc_hd__o311ai_0)
+     1    0.01    2.05    2.03   11.81 ^ _8431_/Y (sky130_fd_sc_hd__o311ai_0)
+                                         _3935_ (net)
+                  2.05    0.00   11.81 ^ place622/A (sky130_fd_sc_hd__buf_4)
+     2    0.00    0.10    1.18   12.99 ^ place622/X (sky130_fd_sc_hd__buf_4)
+                                         net622 (net)
+                  0.10    0.00   12.99 ^ _8434_/A3 (sky130_fd_sc_hd__a311oi_1)
+     2    0.01    0.34    0.31   13.30 v _8434_/Y (sky130_fd_sc_hd__a311oi_1)
+                                         _3938_ (net)
+                  0.34    0.00   13.30 v _8438_/A3 (sky130_fd_sc_hd__o311ai_0)
+     1    0.01    2.02    2.05   15.35 ^ _8438_/Y (sky130_fd_sc_hd__o311ai_0)
+                                         _3942_ (net)
+                  2.02    0.00   15.35 ^ place606/A (sky130_fd_sc_hd__buf_1)
+     3    0.01    0.43    1.26   16.61 ^ place606/X (sky130_fd_sc_hd__buf_1)
+                                         net606 (net)
+                  0.43    0.00   16.61 ^ _8441_/A3 (sky130_fd_sc_hd__a311oi_1)
+     3    0.01    0.31    0.47   17.08 v _8441_/Y (sky130_fd_sc_hd__a311oi_1)
+                                         _3945_ (net)
+                  0.31    0.00   17.08 v _8444_/A3 (sky130_fd_sc_hd__o311ai_0)
+     1    0.01    2.35    2.30   19.38 ^ _8444_/Y (sky130_fd_sc_hd__o311ai_0)
+                                         _3948_ (net)
+                  2.35    0.00   19.38 ^ place597/A (sky130_fd_sc_hd__buf_1)
+     4    0.01    0.43    1.37   20.75 ^ place597/X (sky130_fd_sc_hd__buf_1)
+                                         net597 (net)
+                  0.43    0.00   20.75 ^ _8447_/A3 (sky130_fd_sc_hd__a311oi_1)
+     1    0.01    0.20    0.42   21.17 v _8447_/Y (sky130_fd_sc_hd__a311oi_1)
+                                         _3951_ (net)
+                  0.20    0.00   21.17 v place593/A (sky130_fd_sc_hd__buf_4)
+     3    0.00    0.07    0.56   21.73 v place593/X (sky130_fd_sc_hd__buf_4)
+                                         net593 (net)
+                  0.07    0.00   21.73 v _8449_/A3 (sky130_fd_sc_hd__o31a_1)
+     2    0.00    0.17    1.23   22.96 v _8449_/X (sky130_fd_sc_hd__o31a_1)
+                                         _3953_ (net)
+                  0.17    0.00   22.96 v _8450_/B_N (sky130_fd_sc_hd__nor2b_1)
+     2    0.02    0.19    0.64   23.60 v _8450_/Y (sky130_fd_sc_hd__nor2b_1)
+                                         _3954_ (net)
+                  0.19    0.00   23.60 v _8451_/C (sky130_fd_sc_hd__nor3_1)
+     1    0.00    0.81    0.80   24.40 ^ _8451_/Y (sky130_fd_sc_hd__nor3_1)
+                                         _3955_ (net)
+                  0.81    0.00   24.40 ^ place581/A (sky130_fd_sc_hd__buf_1)
+     5    0.01    0.66    0.99   25.40 ^ place581/X (sky130_fd_sc_hd__buf_1)
+                                         net581 (net)
+                  0.66    0.00   25.40 ^ _8452_/C (sky130_fd_sc_hd__and3_1)
+     2    0.00    0.20    0.76   26.16 ^ _8452_/X (sky130_fd_sc_hd__and3_1)
+                                         _3956_ (net)
+                  0.20    0.00   26.16 ^ _8457_/A2 (sky130_fd_sc_hd__o31a_1)
+     4    0.01    0.39    0.58   26.73 ^ _8457_/X (sky130_fd_sc_hd__o31a_1)
+                                         _3961_ (net)
+                  0.39    0.00   26.73 ^ _8459_/A3 (sky130_fd_sc_hd__a31o_1)
+     2    0.00    0.21    0.58   27.32 ^ _8459_/X (sky130_fd_sc_hd__a31o_1)
+                                         _3963_ (net)
+                  0.21    0.00   27.32 ^ _8461_/A (sky130_fd_sc_hd__nand2_1)
+     2    0.00    0.14    0.20   27.52 v _8461_/Y (sky130_fd_sc_hd__nand2_1)
+                                         _3965_ (net)
+                  0.14    0.00   27.52 v _8462_/B1 (sky130_fd_sc_hd__o21ai_0)
+     2    0.00    0.77    0.34   27.86 ^ _8462_/Y (sky130_fd_sc_hd__o21ai_0)
+                                         _3966_ (net)
+                  0.77    0.00   27.86 ^ _8798_/B1 (sky130_fd_sc_hd__a21oi_1)
+     2    0.01    0.22    0.43   28.29 v _8798_/Y (sky130_fd_sc_hd__a21oi_1)
+                                         _4257_ (net)
+                  0.22    0.00   28.29 v _8802_/B (sky130_fd_sc_hd__or3_1)
+     1    0.00    0.21    1.84   30.14 v _8802_/X (sky130_fd_sc_hd__or3_1)
+                                         _4261_ (net)
+                  0.21    0.00   30.14 v _8806_/A3 (sky130_fd_sc_hd__a31oi_1)
+     1    0.00    0.51    0.71   30.84 ^ _8806_/Y (sky130_fd_sc_hd__a31oi_1)
+                                         _4265_ (net)
+                  0.51    0.00   30.84 ^ _8810_/A1 (sky130_fd_sc_hd__o21ai_0)
+     1    0.00    0.15    0.42   31.26 v _8810_/Y (sky130_fd_sc_hd__o21ai_0)
+                                         _0341_ (net)
+                  0.15    0.00   31.26 v rv32_soc/reg_next_pc[31]$_SDFFE_PN0P_/D (sky130_fd_sc_hd__dfxtp_1)
+                                 31.26   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          0.00   25.00   clock source latency
+     2    0.01    0.00    0.00   25.00 ^ clk (in)
+                                         clk (net)
+                  0.00    0.00   25.00 ^ clkbuf_regs_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     1    0.01    0.11    0.28   25.28 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clk_regs (net)
+                  0.11    0.00   25.28 ^ clkbuf_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.01    0.11    0.34   25.63 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_0_clk_regs (net)
+                  0.11    0.00   25.63 ^ clkbuf_1_0_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02    0.12    0.35   25.98 ^ clkbuf_1_0_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_1_0_0_clk_regs (net)
+                  0.12    0.00   25.98 ^ clkbuf_2_0_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.01    0.11    0.35   26.33 ^ clkbuf_2_0_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_2_0_0_clk_regs (net)
+                  0.11    0.00   26.33 ^ clkbuf_3_0__f_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     7    0.06    0.26    0.47   26.80 ^ clkbuf_3_0__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_3_0__leaf_clk_regs (net)
+                  0.26    0.00   26.80 ^ clkbuf_leaf_64_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+    20    0.05    0.23    0.53   27.33 ^ clkbuf_leaf_64_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_leaf_64_clk_regs (net)
+                  0.23    0.00   27.33 ^ rv32_soc/reg_next_pc[31]$_SDFFE_PN0P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                          0.00   27.33   clock reconvergence pessimism
+                         -0.77   26.56   library setup time
+                                 26.56   data required time
+-----------------------------------------------------------------------------
+                                 26.56   data required time
+                                -31.26   data arrival time
+-----------------------------------------------------------------------------
+                                 -4.70   slack (VIOLATED)
+
+
+SC_METRIC: setupslack
+worst slack max -4.70
+SC_METRIC: tns
+tns max -42.99
+SC_METRIC: report_checks -path_delay min
+Startpoint: mem_valid$_SDFFCE_PN0P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: mem_ready$_DFF_P_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+Corner: fast
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+     2    0.02    0.00    0.00    0.00 ^ clk (in)
+                                         clk (net)
+                  0.00    0.00    0.00 ^ clkbuf_regs_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     1    0.01    0.03    0.08    0.08 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clk_regs (net)
+                  0.03    0.00    0.08 ^ clkbuf_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02    0.03    0.09    0.16 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_0_clk_regs (net)
+                  0.03    0.00    0.16 ^ clkbuf_1_1_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02    0.03    0.09    0.25 ^ clkbuf_1_1_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_1_1_0_clk_regs (net)
+                  0.03    0.00    0.25 ^ clkbuf_2_2_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02    0.03    0.09    0.34 ^ clkbuf_2_2_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_2_2_0_clk_regs (net)
+                  0.03    0.00    0.34 ^ clkbuf_3_5__f_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     9    0.07    0.07    0.12    0.46 ^ clkbuf_3_5__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_3_5__leaf_clk_regs (net)
+                  0.07    0.00    0.46 ^ clkbuf_leaf_52_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+    20    0.06    0.06    0.12    0.58 ^ clkbuf_leaf_52_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_leaf_52_clk_regs (net)
+                  0.06    0.00    0.58 ^ mem_valid$_SDFFCE_PN0P_/CLK (sky130_fd_sc_hd__edfxtp_1)
+     2    0.00    0.05    0.23    0.81 ^ mem_valid$_SDFFCE_PN0P_/Q (sky130_fd_sc_hd__edfxtp_1)
+                                         mem_valid (net)
+                  0.05    0.00    0.81 ^ mem_ready$_DFF_P_/D (sky130_fd_sc_hd__dfxtp_1)
+                                  0.81   data arrival time
+
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+     2    0.02    0.00    0.00    0.00 ^ clk (in)
+                                         clk (net)
+                  0.00    0.00    0.00 ^ clkbuf_regs_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     1    0.01    0.03    0.08    0.08 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clk_regs (net)
+                  0.03    0.00    0.08 ^ clkbuf_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02    0.03    0.09    0.16 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_0_clk_regs (net)
+                  0.03    0.00    0.16 ^ clkbuf_1_1_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02    0.03    0.09    0.25 ^ clkbuf_1_1_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_1_1_0_clk_regs (net)
+                  0.03    0.00    0.25 ^ clkbuf_2_2_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02    0.03    0.09    0.34 ^ clkbuf_2_2_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_2_2_0_clk_regs (net)
+                  0.03    0.00    0.34 ^ clkbuf_3_5__f_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     9    0.07    0.07    0.12    0.46 ^ clkbuf_3_5__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_3_5__leaf_clk_regs (net)
+                  0.07    0.00    0.46 ^ clkbuf_leaf_52_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+    20    0.06    0.06    0.12    0.58 ^ clkbuf_leaf_52_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_leaf_52_clk_regs (net)
+                  0.06    0.00    0.58 ^ mem_ready$_DFF_P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                          0.00    0.58   clock reconvergence pessimism
+                         -0.02    0.56   library hold time
+                                  0.56   data required time
+-----------------------------------------------------------------------------
+                                  0.56   data required time
+                                 -0.81   data arrival time
+-----------------------------------------------------------------------------
+                                  0.25   slack (MET)
+
+
+SC_METRIC: holdslack
+worst slack min 0.25
+SC_METRIC: unconstrained
+Startpoint: rv32_soc/mem_do_prefetch$_SDFFE_PP0P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: mem_la_addr[21] (output port)
+Path Group: unconstrained
+Path Type: max
+Corner: slow
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+     2    0.01    0.00    0.00    0.00 ^ clk (in)
+                                         clk (net)
+                  0.00    0.00    0.00 ^ clkbuf_regs_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     1    0.01    0.11    0.28    0.28 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clk_regs (net)
+                  0.11    0.00    0.28 ^ clkbuf_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.01    0.11    0.34    0.63 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_0_clk_regs (net)
+                  0.11    0.00    0.63 ^ clkbuf_1_1_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02    0.13    0.36    0.99 ^ clkbuf_1_1_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_1_1_0_clk_regs (net)
+                  0.13    0.00    0.99 ^ clkbuf_2_2_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.01    0.11    0.36    1.35 ^ clkbuf_2_2_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_2_2_0_clk_regs (net)
+                  0.11    0.00    1.35 ^ clkbuf_3_4__f_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     8    0.06    0.29    0.49    1.83 ^ clkbuf_3_4__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_3_4__leaf_clk_regs (net)
+                  0.29    0.00    1.83 ^ clkbuf_leaf_54_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+    27    0.04    0.21    0.52    2.36 ^ clkbuf_leaf_54_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_leaf_54_clk_regs (net)
+                  0.21    0.00    2.36 ^ rv32_soc/mem_do_prefetch$_SDFFE_PP0P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+    10    0.02    0.71    1.73    4.09 ^ rv32_soc/mem_do_prefetch$_SDFFE_PP0P_/Q (sky130_fd_sc_hd__dfxtp_1)
+                                         _0890_ (net)
+                  0.71    0.00    4.09 ^ _4942_/A (sky130_fd_sc_hd__or2_1)
+     1    0.00    0.18    0.61    4.71 ^ _4942_/X (sky130_fd_sc_hd__or2_1)
+                                         _0891_ (net)
+                  0.18    0.00    4.71 ^ place835/A (sky130_fd_sc_hd__buf_1)
+    62    0.13    5.87    4.60    9.31 ^ place835/X (sky130_fd_sc_hd__buf_1)
+                                         net835 (net)
+                  5.87    0.00    9.31 ^ _4994_/B (sky130_fd_sc_hd__nor2_1)
+     1    0.01    0.77    2.15   11.46 v _4994_/Y (sky130_fd_sc_hd__nor2_1)
+                                         _0934_ (net)
+                  0.77    0.00   11.46 v _4995_/B1 (sky130_fd_sc_hd__a31oi_1)
+     1    0.07    6.23    5.33   16.78 ^ _4995_/Y (sky130_fd_sc_hd__a31oi_1)
+                                         mem_la_addr[21] (net)
+                  6.23    0.00   16.78 ^ mem_la_addr[21] (out)
+                                 16.78   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+SC_METRIC: clock_skew
+Clock clk
+ 2.3687 source latency rv32_soc/latched_rd[3]$_SDFFCE_PP0P_/CLK ^
+-1.7919 target latency rv32_soc/cpuregs[11][9]$_DFFE_PP_/CLK ^
+ 0.0000 CRPR
+--------------
+ 0.5768 setup skew
+
+Clock clk
+ 2.3687 source latency rv32_soc/latched_rd[3]$_SDFFCE_PP0P_/CLK ^
+-1.7919 target latency rv32_soc/cpuregs[11][9]$_DFFE_PP_/CLK ^
+ 0.0000 CRPR
+--------------
+ 0.5768 hold skew
+
+SC_METRIC: DRV violators
+max slew
+
+Pin                                    Limit    Slew   Slack
+------------------------------------------------------------
+_7338_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7357_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7359_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7361_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7363_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7367_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7369_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7372_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7374_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7389_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7391_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7393_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7401_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7403_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7405_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7407_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7418_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7419_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7420_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7421_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7424_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7425_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7426_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7427_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7438_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7439_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7440_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7441_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7443_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7445_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7447_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7450_/B1                               1.50    3.56   -2.06 (VIOLATED)
+_7452_/A                                1.50    3.56   -2.06 (VIOLATED)
+_7463_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7465_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7467_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7469_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7472_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7473_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7475_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7477_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7489_/B1                               1.50    3.56   -2.06 (VIOLATED)
+_7491_/A                                1.50    3.56   -2.06 (VIOLATED)
+_7494_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7496_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7498_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7502_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7503_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7504_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7505_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7521_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7523_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7525_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7527_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7530_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7532_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7534_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7536_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7545_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7546_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7548_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7550_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7553_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7554_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7556_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7558_/S0                               1.50    3.56   -2.06 (VIOLATED)
+_7584_/A1                               1.50    3.56   -2.06 (VIOLATED)
+_7586_/B1                               1.50    3.56   -2.06 (VIOLATED)
+_7591_/B1                               1.50    3.56   -2.06 (VIOLATED)
+_7593_/B2                               1.50    3.56   -2.06 (VIOLATED)
+place964/X                              1.51    3.56   -2.05 (VIOLATED)
+_5223_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5290_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5293_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5294_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5297_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5306_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5311_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5321_/A1                               1.50    3.25   -1.75 (VIOLATED)
+_5322_/A1                               1.50    3.25   -1.75 (VIOLATED)
+_5323_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5335_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5337_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5339_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5340_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5345_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5347_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5348_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5351_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5357_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5358_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5359_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5360_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5365_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5370_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5376_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5381_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5388_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5390_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5393_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5396_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5400_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5401_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5402_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5403_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5413_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5415_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5416_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5417_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5420_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5423_/B1                               1.50    3.25   -1.75 (VIOLATED)
+_5424_/A1                               1.50    3.25   -1.75 (VIOLATED)
+_5427_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5428_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5436_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5437_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5438_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5439_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5442_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5444_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5447_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5449_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5455_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5456_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5457_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5458_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5461_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5463_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5466_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5468_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5474_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5475_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5476_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5477_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5480_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5482_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5486_/A1                               1.50    3.25   -1.75 (VIOLATED)
+_5487_/A1                               1.50    3.25   -1.75 (VIOLATED)
+_5495_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5497_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5499_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5501_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5505_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5507_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5509_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5511_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5516_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5517_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5518_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5519_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5522_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5523_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5524_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5525_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5530_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5532_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5534_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5536_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5544_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5552_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5553_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5555_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5557_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5560_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5561_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5565_/B1                               1.50    3.25   -1.75 (VIOLATED)
+_5568_/A1                               1.50    3.25   -1.75 (VIOLATED)
+_5569_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5649_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5650_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5651_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5652_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5674_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5676_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5679_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5681_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5685_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5686_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5687_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_5688_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_7792_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_7793_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_7795_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_7797_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_7800_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_7801_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_7802_/S0                               1.50    3.25   -1.75 (VIOLATED)
+_7803_/S0                               1.50    3.25   -1.75 (VIOLATED)
+place956/X                              1.51    3.25   -1.74 (VIOLATED)
+_5262_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5264_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5266_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5268_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5271_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5273_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5275_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5277_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5488_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5540_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5542_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5546_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5573_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5574_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5575_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5576_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5579_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5581_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5584_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5586_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5593_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5595_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5597_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5599_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5603_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5604_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5605_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5606_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5610_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5612_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5615_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5617_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5621_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5622_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5623_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5624_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5629_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5630_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5631_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5632_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5635_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5636_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5637_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5638_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5643_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5644_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5645_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5646_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5657_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5659_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5661_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5663_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5667_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5668_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5669_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5670_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5694_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5696_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5698_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5700_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5705_/A1                               1.50    3.18   -1.68 (VIOLATED)
+_5706_/A1                               1.50    3.18   -1.68 (VIOLATED)
+_5709_/C1                               1.50    3.18   -1.68 (VIOLATED)
+_5710_/A1                               1.50    3.18   -1.68 (VIOLATED)
+_5712_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5713_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5720_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5721_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5722_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5723_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5726_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5727_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5728_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5729_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5734_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5736_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5739_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5741_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5745_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5746_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5747_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5748_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5753_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5754_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5755_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5756_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5759_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5761_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5765_/A1                               1.50    3.18   -1.68 (VIOLATED)
+_5766_/A1                               1.50    3.18   -1.68 (VIOLATED)
+_5767_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5773_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5774_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5775_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5776_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5779_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5781_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5783_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5785_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5792_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5794_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5797_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5799_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5802_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5805_/B1                               1.50    3.18   -1.68 (VIOLATED)
+_5806_/A1                               1.50    3.18   -1.68 (VIOLATED)
+_5808_/S0                               1.50    3.18   -1.68 (VIOLATED)
+_5809_/S0                               1.50    3.18   -1.68 (VIOLATED)
+place957/X                              1.51    3.18   -1.68 (VIOLATED)
+_5146_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5151_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5160_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5163_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5167_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5170_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5176_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5178_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5200_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5202_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5206_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5215_/A1                               1.50    2.56   -1.06 (VIOLATED)
+_5216_/A1                               1.50    2.56   -1.06 (VIOLATED)
+_5220_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5225_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5227_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5239_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5240_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5242_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5245_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5248_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5249_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5251_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5253_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5817_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5818_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5819_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5820_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5822_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5823_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5828_/B1                               1.50    2.56   -1.06 (VIOLATED)
+_5831_/A1                               1.50    2.56   -1.06 (VIOLATED)
+_5832_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5837_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5839_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5841_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5842_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5845_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5847_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5849_/S0                               1.50    2.56   -1.06 (VIOLATED)
+_5850_/S0                               1.50    2.56   -1.06 (VIOLATED)
+place955/X                              1.51    2.56   -1.05 (VIOLATED)
+_8377_/C                                1.50    2.12   -0.62 (VIOLATED)
+_8378_/B                                1.50    2.12   -0.62 (VIOLATED)
+_8487_/C                                1.50    2.12   -0.62 (VIOLATED)
+_8761_/C                                1.50    2.12   -0.62 (VIOLATED)
+_8781_/B                                1.50    2.12   -0.62 (VIOLATED)
+_8786_/C                                1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[0]$_DFFE_PP_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[10]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[11]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[12]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[13]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[14]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[15]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[16]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[17]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[18]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[19]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[1]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[20]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[21]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[22]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[23]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[24]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[25]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[26]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[27]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[28]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[29]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[2]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[30]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[31]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[3]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[4]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[5]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[6]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[7]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[8]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/decoded_imm[9]$_SDFFCE_PN0P_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/instr_lb$_DFFE_PP_/DE          1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/instr_lbu$_DFFE_PP_/DE         1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/instr_lh$_DFFE_PP_/DE          1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/instr_lhu$_DFFE_PP_/DE         1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/instr_lw$_DFFE_PP_/DE          1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/instr_rdcycle$_DFFE_PP_/DE     1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/instr_rdcycleh$_DFFE_PP_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/instr_rdinstr$_DFFE_PP_/DE     1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/instr_rdinstrh$_DFFE_PP_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/instr_sb$_DFFE_PP_/DE          1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/instr_sh$_DFFE_PP_/DE          1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/instr_slli$_DFFE_PP_/DE        1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/instr_srai$_DFFE_PP_/DE        1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/instr_srli$_DFFE_PP_/DE        1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/instr_sw$_DFFE_PP_/DE          1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/is_jalr_addi_slti_sltiu_xori_ori_andi$_DFFE_PP_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/is_sll_srl_sra$_DFFE_PP_/DE    1.50    2.12   -0.62 (VIOLATED)
+rv32_soc/is_slli_srli_srai$_DFFE_PP_/DE    1.50    2.12   -0.62 (VIOLATED)
+place849/X                              1.51    2.12   -0.62 (VIOLATED)
+_8283_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8286_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8289_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8293_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8296_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8300_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8303_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8306_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8309_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8313_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8316_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8321_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8324_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8327_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8330_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8333_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8335_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8339_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8341_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8345_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8347_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8350_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8353_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8356_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8359_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8361_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8364_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8369_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8371_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8375_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8484_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8491_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8501_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8515_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8531_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8533_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8539_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8558_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8560_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8570_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8585_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8586_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8602_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8610_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8620_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8627_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8638_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8639_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8653_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8654_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8672_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8681_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8683_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8699_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8709_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8716_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8725_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8730_/A2                               1.50    1.77   -0.27 (VIOLATED)
+_8737_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8741_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8775_/C                                1.50    1.77   -0.27 (VIOLATED)
+_8809_/B                                1.50    1.77   -0.27 (VIOLATED)
+_8814_/A2                               1.50    1.77   -0.27 (VIOLATED)
+place757/X                              1.51    1.77   -0.26 (VIOLATED)
+_4958_/B                                1.50    1.75   -0.25 (VIOLATED)
+_4959_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_4962_/B                                1.50    1.75   -0.25 (VIOLATED)
+_4963_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_4966_/B                                1.50    1.75   -0.25 (VIOLATED)
+_4967_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_4970_/B                                1.50    1.75   -0.25 (VIOLATED)
+_4971_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_4974_/B                                1.50    1.75   -0.25 (VIOLATED)
+_4975_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_4978_/B                                1.50    1.75   -0.25 (VIOLATED)
+_4979_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_4982_/B                                1.50    1.75   -0.25 (VIOLATED)
+_4983_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_4986_/B                                1.50    1.75   -0.25 (VIOLATED)
+_4987_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_4990_/B                                1.50    1.75   -0.25 (VIOLATED)
+_4991_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_4994_/B                                1.50    1.75   -0.25 (VIOLATED)
+_4995_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5001_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5002_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5005_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5006_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5009_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5010_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5013_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5014_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5017_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5018_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5021_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5022_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5025_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5026_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5029_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5030_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5033_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5034_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5037_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5038_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5044_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5045_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5048_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5049_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5052_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5053_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5056_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5057_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5060_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5061_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5064_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5065_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5068_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5069_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5072_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5073_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_5076_/B                                1.50    1.75   -0.25 (VIOLATED)
+_5077_/A1                               1.50    1.75   -0.25 (VIOLATED)
+_6478_/A2                               1.50    1.75   -0.25 (VIOLATED)
+_7863_/C                                1.50    1.75   -0.25 (VIOLATED)
+_7873_/B                                1.50    1.75   -0.25 (VIOLATED)
+_7874_/A1                               1.50    1.75   -0.25 (VIOLATED)
+place835/X                              1.51    1.75   -0.24 (VIOLATED)
+_7685_/A                                1.50    1.65   -0.15 (VIOLATED)
+_7723_/D                                1.50    1.65   -0.15 (VIOLATED)
+_7852_/C                                1.50    1.65   -0.15 (VIOLATED)
+_7856_/A_N                              1.50    1.65   -0.15 (VIOLATED)
+_8382_/A                                1.50    1.65   -0.15 (VIOLATED)
+_8497_/A                                1.50    1.65   -0.15 (VIOLATED)
+_8498_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8508_/A                                1.50    1.65   -0.15 (VIOLATED)
+_8512_/B2                               1.50    1.65   -0.15 (VIOLATED)
+_8516_/B1                               1.50    1.65   -0.15 (VIOLATED)
+_8519_/B2                               1.50    1.65   -0.15 (VIOLATED)
+_8528_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8529_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8535_/B1                               1.50    1.65   -0.15 (VIOLATED)
+_8536_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8545_/A                                1.50    1.65   -0.15 (VIOLATED)
+_8547_/B2                               1.50    1.65   -0.15 (VIOLATED)
+_8556_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8557_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8564_/A                                1.50    1.65   -0.15 (VIOLATED)
+_8567_/B2                               1.50    1.65   -0.15 (VIOLATED)
+_8573_/A                                1.50    1.65   -0.15 (VIOLATED)
+_8574_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8579_/A                                1.50    1.65   -0.15 (VIOLATED)
+_8591_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8608_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8609_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8625_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8626_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8641_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8643_/C_N                              1.50    1.65   -0.15 (VIOLATED)
+_8659_/A                                1.50    1.65   -0.15 (VIOLATED)
+_8661_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8675_/B1                               1.50    1.65   -0.15 (VIOLATED)
+_8679_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8686_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8690_/B1                               1.50    1.65   -0.15 (VIOLATED)
+_8697_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8698_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8722_/A                                1.50    1.65   -0.15 (VIOLATED)
+_8723_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8739_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8805_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8806_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8824_/A                                1.50    1.65   -0.15 (VIOLATED)
+_8843_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8845_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8847_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8849_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8851_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8853_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8855_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8857_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8860_/B2                               1.50    1.65   -0.15 (VIOLATED)
+_8864_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8865_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8866_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8867_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8868_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8869_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8871_/A                                1.50    1.65   -0.15 (VIOLATED)
+_8875_/A                                1.50    1.65   -0.15 (VIOLATED)
+_8879_/A1                               1.50    1.65   -0.15 (VIOLATED)
+_8882_/A1                               1.50    1.65   -0.15 (VIOLATED)
+place870/X                              1.51    1.65   -0.14 (VIOLATED)
+_4995_/Y                                1.49    1.54   -0.05 (VIOLATED)
+_6333_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6334_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6338_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6339_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6342_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6343_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6347_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6348_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6351_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6352_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6356_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6357_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6360_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6361_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6365_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6366_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6371_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6372_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6375_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6376_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6380_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6381_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6384_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6385_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6388_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6389_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6392_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6393_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6396_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6397_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6400_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6401_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6404_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6405_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6408_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6409_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6412_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6413_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6418_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6419_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6422_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6423_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6426_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6427_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6431_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6432_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6435_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6436_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6440_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6441_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6445_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6446_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6450_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6451_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6454_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6455_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6457_/A                                1.50    1.54   -0.04 (VIOLATED)
+_6458_/A2                               1.50    1.54   -0.04 (VIOLATED)
+_6460_/B                                1.50    1.54   -0.04 (VIOLATED)
+_6461_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_6463_/A                                1.50    1.54   -0.04 (VIOLATED)
+_7825_/A                                1.50    1.54   -0.04 (VIOLATED)
+_7826_/A1                               1.50    1.54   -0.04 (VIOLATED)
+place796/X                              1.51    1.54   -0.04 (VIOLATED)
+
+max capacitance
+
+Pin                                    Limit     Cap   Slack
+------------------------------------------------------------
+place956/X                              0.30    0.65   -0.35 (VIOLATED)
+place957/X                              0.28    0.59   -0.31 (VIOLATED)
+place964/X                              0.16    0.37   -0.22 (VIOLATED)
+place955/X                              0.13    0.22   -0.09 (VIOLATED)
+place849/X                              0.13    0.19   -0.06 (VIOLATED)
+place757/X                              0.13    0.15   -0.02 (VIOLATED)
+place835/X                              0.13    0.15   -0.02 (VIOLATED)
+place870/X                              0.13    0.14   -0.01 (VIOLATED)
+place796/X                              0.13    0.13   -0.00 (VIOLATED)
+_4995_/Y                                0.07    0.07   -0.00 (VIOLATED)
+
+SC_METRIC: floating nets
+Reporting floating nets: reports/floating_nets.rpt
+SC_METRIC: overdriven nets
+Reporting overdriven nets: reports/overdriven_nets.rpt
+Reporting overdriven nets: reports/overdriven_nets_with_parallel.rpt
+SC_METRIC: fmax
+clk fmax = 33.67 MHz
+Clock                   Period          Waveform
+----------------------------------------------------
+clk                      25.00        0.00     12.50
+SC_METRIC: power
+Power for corner: fast
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             3.46e-03   3.83e-05   4.68e-05   3.54e-03  57.5%
+Combinational          5.98e-04   3.98e-04   3.53e-05   1.03e-03  16.7%
+Clock                  8.90e-04   6.96e-04   4.02e-06   1.59e-03  25.8%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  4.95e-03   1.13e-03   8.61e-05   6.17e-03 100.0%
+                          80.2%      18.4%       1.4%
+Power for corner: slow
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             1.00e-03   1.73e-05   5.94e-10   1.02e-03  49.3%
+Combinational          1.76e-04   1.80e-04   1.43e-09   3.56e-04  17.2%
+Clock                  4.06e-04   2.84e-04   1.43e-10   6.90e-04  33.4%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  1.58e-03   4.81e-04   2.17e-09   2.06e-03 100.0%
+                          76.7%      23.3%       0.0%
+Power for corner: typical
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             2.89e-03   3.16e-05   1.36e-08   2.92e-03  60.4%
+Combinational          3.27e-04   3.28e-04   1.31e-08   6.55e-04  13.5%
+Clock                  6.99e-04   5.62e-04   1.39e-09   1.26e-03  26.1%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  3.92e-03   9.22e-04   2.81e-08   4.84e-03 100.0%
+                          80.9%      19.1%       0.0%
+SC_METRIC: cellarea
+Design area 367592 um^2 38% utilization.
+Cell type report:                       Count       Area
+  Macro                                     1  284538.47
+  Fill cell                             74410  572913.22
+  Tap cell                               8830   11048.10
+  Clock buffer                             89    2227.14
+  Timing Repair Buffer                    417    2678.82
+  Inverter                                 95     356.59
+  Clock inverter                           46     559.29
+  Sequential cell                        1574   44088.53
+  Multi-Input combinational cell         4277   33143.04
+  Total                                 89739  951553.19
+
+Cell instance report:
+  sky130_sram_2kbyte_1rw1r_32x512_8         1  284538.47
+  sky130_fd_sc_hd__a2111oi_0                1       8.76
+  sky130_fd_sc_hd__a211o_1                 10      87.58
+  sky130_fd_sc_hd__a211oi_1                26     195.19
+  sky130_fd_sc_hd__a211oi_4                 3      60.06
+  sky130_fd_sc_hd__a21bo_2                  1      10.01
+  sky130_fd_sc_hd__a21boi_0                 2      15.01
+  sky130_fd_sc_hd__a21o_1                  58     435.42
+  sky130_fd_sc_hd__a21oi_1                310    1551.49
+  sky130_fd_sc_hd__a221o_1                  5      50.05
+  sky130_fd_sc_hd__a221oi_1                21     183.93
+  sky130_fd_sc_hd__a222oi_1                39     390.37
+  sky130_fd_sc_hd__a22o_1                  30     262.75
+  sky130_fd_sc_hd__a22oi_1                 48     360.35
+  sky130_fd_sc_hd__a311o_1                  7      70.07
+  sky130_fd_sc_hd__a311oi_1                10      87.58
+  sky130_fd_sc_hd__a311oi_4                 8     210.20
+  sky130_fd_sc_hd__a31o_1                   5      43.79
+  sky130_fd_sc_hd__a31oi_1                 60     375.36
+  sky130_fd_sc_hd__a32o_1                   8      80.08
+  sky130_fd_sc_hd__a32oi_1                  3      26.28
+  sky130_fd_sc_hd__a41o_1                   2      20.02
+  sky130_fd_sc_hd__a41oi_1                  1       8.76
+  sky130_fd_sc_hd__and2_0                  30     187.68
+  sky130_fd_sc_hd__and2_1                  55     344.08
+  sky130_fd_sc_hd__and3_1                  49     306.54
+  sky130_fd_sc_hd__and4_1                  29     253.99
+  sky130_fd_sc_hd__buf_1                  142     533.01
+  sky130_fd_sc_hd__buf_12                   5     100.10
+  sky130_fd_sc_hd__buf_4                  265    1989.41
+  sky130_fd_sc_hd__buf_6                    2      22.52
+  sky130_fd_sc_hd__bufinv_16                2      60.06
+  sky130_fd_sc_hd__bufinv_8                 1      17.52
+  sky130_fd_sc_hd__clkbuf_16               89    2227.14
+  sky130_fd_sc_hd__clkdlybuf4s15_2          1      11.26
+  sky130_fd_sc_hd__clkdlybuf4s25_2          1      10.01
+  sky130_fd_sc_hd__clkinv_1                 1       3.75
+  sky130_fd_sc_hd__clkinv_16                3      90.09
+  sky130_fd_sc_hd__clkinv_2                 2      10.01
+  sky130_fd_sc_hd__clkinv_8                 5      81.33
+  sky130_fd_sc_hd__clkinvlp_2               2      10.01
+  sky130_fd_sc_hd__clkinvlp_4               1       7.51
+  sky130_fd_sc_hd__conb_1                 149     559.29
+  sky130_fd_sc_hd__dfxtp_1                313    6266.01
+  sky130_fd_sc_hd__dfxtp_2                  5     106.35
+  sky130_fd_sc_hd__diode_2                 95     237.73
+  sky130_fd_sc_hd__dlymetal6s4s_1           1      12.51
+  sky130_fd_sc_hd__edfxtp_1              1256   37716.17
+  sky130_fd_sc_hd__fill_1                9733   12177.93
+  sky130_fd_sc_hd__fill_2                9247   23139.69
+  sky130_fd_sc_hd__fill_4                3444   17236.53
+  sky130_fd_sc_hd__fill_8               51986  520359.07
+  sky130_fd_sc_hd__inv_1                  100     375.36
+  sky130_fd_sc_hd__inv_12                   4      65.06
+  sky130_fd_sc_hd__inv_16                   2      40.04
+  sky130_fd_sc_hd__inv_2                    4      15.01
+  sky130_fd_sc_hd__inv_4                    1       6.26
+  sky130_fd_sc_hd__inv_6                    5      43.79
+  sky130_fd_sc_hd__inv_8                    8      90.09
+  sky130_fd_sc_hd__maj3_1                  12     120.12
+  sky130_fd_sc_hd__maj3_2                   7      78.83
+  sky130_fd_sc_hd__mux2_1                  40     450.43
+  sky130_fd_sc_hd__mux2_2                   6      67.56
+  sky130_fd_sc_hd__mux2i_1                 80     800.77
+  sky130_fd_sc_hd__mux4_2                 529   11913.93
+  sky130_fd_sc_hd__nand2_1                531    1993.16
+  sky130_fd_sc_hd__nand2b_1                45     281.52
+  sky130_fd_sc_hd__nand3_1                 73     365.35
+  sky130_fd_sc_hd__nand3_2                  1      10.01
+  sky130_fd_sc_hd__nand3b_1                 9      67.56
+  sky130_fd_sc_hd__nand4_1                 23     143.89
+  sky130_fd_sc_hd__nand4b_1                 1       8.76
+  sky130_fd_sc_hd__nor2_1                 579    2173.33
+  sky130_fd_sc_hd__nor2_2                  19     118.86
+  sky130_fd_sc_hd__nor2b_1                 34     212.70
+  sky130_fd_sc_hd__nor3_1                 121     605.58
+  sky130_fd_sc_hd__nor3_2                   1      10.01
+  sky130_fd_sc_hd__nor3b_1                  3      22.52
+  sky130_fd_sc_hd__nor4_1                  24     150.14
+  sky130_fd_sc_hd__nor4b_1                  3      26.28
+  sky130_fd_sc_hd__o2111ai_1                1       8.76
+  sky130_fd_sc_hd__o211a_1                  1      10.01
+  sky130_fd_sc_hd__o211ai_1                31     232.72
+  sky130_fd_sc_hd__o21a_1                  32     240.23
+  sky130_fd_sc_hd__o21ai_0                549    2747.64
+  sky130_fd_sc_hd__o21ai_1                  3      15.01
+  sky130_fd_sc_hd__o21ai_2                  1       8.76
+  sky130_fd_sc_hd__o21ai_4                  2      32.53
+  sky130_fd_sc_hd__o21bai_1                 4      30.03
+  sky130_fd_sc_hd__o221a_2                  2      22.52
+  sky130_fd_sc_hd__o221ai_1                46     402.89
+  sky130_fd_sc_hd__o22a_1                   3      26.28
+  sky130_fd_sc_hd__o22ai_1                 36     225.22
+  sky130_fd_sc_hd__o2bb2ai_1                2      17.52
+  sky130_fd_sc_hd__o311a_1                  1      10.01
+  sky130_fd_sc_hd__o311ai_0                21     183.93
+  sky130_fd_sc_hd__o311ai_4                 6     157.65
+  sky130_fd_sc_hd__o31a_1                   4      35.03
+  sky130_fd_sc_hd__o31ai_1                 28     210.20
+  sky130_fd_sc_hd__o31ai_2                  1      12.51
+  sky130_fd_sc_hd__o31ai_4                  1      21.27
+  sky130_fd_sc_hd__o32a_1                   2      20.02
+  sky130_fd_sc_hd__o32ai_1                 14     122.62
+  sky130_fd_sc_hd__o41ai_1                  1       8.76
+  sky130_fd_sc_hd__or2_1                   36     225.22
+  sky130_fd_sc_hd__or3_1                   28     175.17
+  sky130_fd_sc_hd__or3b_2                   3      26.28
+  sky130_fd_sc_hd__or4_1                   11      82.58
+  sky130_fd_sc_hd__or4b_2                   1      10.01
+  sky130_fd_sc_hd__tapvpwrvgnd_1         8830   11048.10
+  sky130_fd_sc_hd__xnor2_1                131    1147.35
+  sky130_fd_sc_hd__xnor2_2                  1      16.27
+  sky130_fd_sc_hd__xnor2_4                  1      27.53
+  sky130_fd_sc_hd__xor2_1                  67     586.81

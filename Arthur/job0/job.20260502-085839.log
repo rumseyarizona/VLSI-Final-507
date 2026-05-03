@@ -1,0 +1,47 @@
+| WARNING  | Adding sky130hd to [asic,asiclib]
+| WARNING  | Could not find remote server configuration: defaulting to https://server.siliconcompiler.com
+| INFO     | Collecting files to: /home/arthur/ECE507/SRAM/build/picorv32_top/job0/sc_collected_files
+| INFO     |   Collecting file: /home/arthur/ECE507/SRAM/picorv32.v
+| INFO     |   Collecting file: /home/arthur/ECE507/SRAM/picorv32_top.v
+| INFO     |   Collecting file: /home/arthur/ECE507/SRAM/sky130_sram_2k.bb.v
+| INFO     |   Collecting file: /home/arthur/ECE507/SRAM/picorv32.sdc
+| INFO     | Found siliconcompiler [tool,openroad,task,antenna_repair] data at /home/arthur/ECE507/venv/lib/python3.12/site-packages/siliconcompiler
+| INFO     |   Collecting file: /home/arthur/ECE507/venv/lib/python3.12/site-packages/siliconcompiler/tools/_common/sdc/sc_constraints.sdc
+| INFO     | Found sc-common [tool,openroad,task,init_floorplan] data at /home/arthur/ECE507/venv/lib/python3.12/site-packages/siliconcompiler/tools/_common
+| INFO     |   Collecting file: /home/arthur/ECE507/venv/lib/python3.12/site-packages/siliconcompiler/tools/_common/tcl/sc_pin_constraints.tcl
+| INFO     | Terms of Service info for this server:
+| INFO     | -------------------------------------------------------------------------------------
+| INFO     |   DISCLAIMER:
+| INFO     |   - The open SiliconCompiler remote server is a free service. Please don't abuse it.
+| INFO     |   - Submitted designs must be open source. SiliconCompiler is not responsible for any
+| INFO     |     proprietary IP that may be uploaded.
+| INFO     |   - Only send one run at a time (or you may be temporarily blocked).
+| INFO     |   - Do not send large designs (machines have limited resources).
+| INFO     |   - Nontrivial designs may take some time to run. (machines have limited resources).
+| INFO     |   - For full TOS, see https://www.siliconcompiler.com/terms
+| INFO     | -------------------------------------------------------------------------------------
+| INFO     | Your job will be uploaded to a public server in 5 seconds.
+| INFO     | Job started. Progress will be checked and reported every 30 seconds.
+| INFO     | Your job's reference ID is: fb43e693b45641cc9f1a785e93f7f5de
+| INFO     | Job status: failed
+| INFO     | Remote job completed! Retrieving final results...
+| INFO     |     cts.clock_tree_synthesis/0
+| INFO     |     cts.fillcell/0
+| INFO     |     cts.repair_timing/0
+| INFO     |     dfm.metal_fill/0
+| INFO     |     elaborate/0
+| INFO     |     floorplan.init/0
+| INFO     |     floorplan.macro_placement/0
+| INFO     |     floorplan.pin_placement/0
+| INFO     |     floorplan.power_grid/0
+| INFO     |     floorplan.tapcell/0
+| INFO     |     place.detailed/0
+| INFO     |     place.global/0
+| INFO     |     place.repair_design/0
+| INFO     |     route.antenna_repair/0
+| INFO     |     route.detailed/0
+| INFO     |     route.global/0
+| INFO     |     synthesis/0
+| INFO     |     write.gds/0
+| INFO     |     write.views/0
+| WARNING  | Could not fetch results for final results.

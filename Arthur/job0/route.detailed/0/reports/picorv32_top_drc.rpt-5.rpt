@@ -1,0 +1,24 @@
+violation type: Short
+	srcs: net:net869 net:rv32_soc\/count_cycle\[44\]
+	bbox = (654.0500, 632.1700) - (654.1900, 632.3200) on Layer met1
+violation type: Short
+	srcs: net:net869 net:rv32_soc\/count_cycle\[44\]
+	bbox = (654.0500, 632.1700) - (654.1900, 632.2500) on Layer met1
+violation type: Short
+	srcs: net:net869 net:rv32_soc\/count_cycle\[44\]
+	bbox = (654.0500, 632.1700) - (654.1600, 632.3200) on Layer met1
+violation type: Short
+	srcs: net:net869 net:rv32_soc\/count_cycle\[44\]
+	bbox = (654.0500, 632.1700) - (654.1600, 632.2500) on Layer met1
+violation type: Short
+	srcs: net:net869 net:rv32_soc\/count_cycle\[44\]
+	bbox = (654.0500, 632.1700) - (654.2650, 632.3100) on Layer met1
+violation type: Short
+	srcs: net:net869 net:rv32_soc\/count_cycle\[44\]
+	bbox = (654.0500, 632.1700) - (654.2650, 632.2500) on Layer met1
+violation type: Metal Spacing
+	srcs: net:net867
+	bbox = (655.8900, 632.1600) - (655.9950, 632.3000) on Layer met1
+violation type: Metal Spacing
+	srcs: net:net867
+	bbox = (655.8900, 632.1300) - (655.9950, 632.3000) on Layer met1

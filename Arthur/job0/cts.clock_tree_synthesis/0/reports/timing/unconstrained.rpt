@@ -1,0 +1,36 @@
+Startpoint: clk (clock source 'clk')
+Endpoint: clkload14/Y (internal pin)
+Path Group: unconstrained
+Path Type: max
+Corner: slow
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+     2    0.06    0.00    0.00   12.50 v clk (in)
+                                         clk (net)
+                  0.00    0.00   12.50 v clkbuf_regs_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     1    0.01    0.08    0.47   12.97 v clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clk_regs (net)
+                  0.08    0.00   12.97 v clkbuf_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.01    0.09    0.53   13.49 v clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_0_clk_regs (net)
+                  0.09    0.00   13.49 v clkbuf_1_0_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02    0.09    0.54   14.04 v clkbuf_1_0_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_1_0_0_clk_regs (net)
+                  0.09    0.00   14.04 v clkbuf_2_0_0_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02    0.09    0.54   14.58 v clkbuf_2_0_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_2_0_0_clk_regs (net)
+                  0.09    0.00   14.58 v clkbuf_3_1__f_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+     8    0.06    0.14    0.60   15.18 v clkbuf_3_1__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_3_1__leaf_clk_regs (net)
+                  0.14    0.00   15.18 v clkbuf_leaf_63_clk_regs/A (sky130_fd_sc_hd__clkbuf_16)
+    27    0.06    0.13    0.62   15.80 v clkbuf_leaf_63_clk_regs/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_leaf_63_clk_regs (net)
+                  0.13    0.00   15.80 v clkload14/A (sky130_fd_sc_hd__bufinv_16)
+     0    0.00    0.07    0.61   16.41 ^ clkload14/Y (sky130_fd_sc_hd__bufinv_16)
+                                         (unconnected)
+                                 16.41   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+

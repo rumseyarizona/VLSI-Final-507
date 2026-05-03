@@ -1,0 +1,7 @@
+Clock clk
+ 2.7648 source latency rv32_soc/cpu_state[1]$_DFF_P_/CLK ^
+-2.0624 target latency rv32_soc/cpuregs[11][9]$_DFFE_PP_/CLK ^
+ 0.0000 CRPR
+--------------
+ 0.7024 setup skew
+
