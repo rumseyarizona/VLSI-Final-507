@@ -1,0 +1,87 @@
+ 13: [WARNING FLW-0001] No clocks defined.
+ 28: [WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+ 29: [WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+ 30: [WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+ 31: [WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+ 32: [WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+ 33: [WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+ 34: [WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+ 35: [WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+ 36: [WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+ 37: [WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+ 46: [WARNING DRT-0120] Large net net154 has 433 pins which may impact routing performance. Consider optimization.
+ 47: [WARNING DRT-0120] Large net net262 has 168 pins which may impact routing performance. Consider optimization.
+ 48: [WARNING DRT-0120] Large net net261 has 441 pins which may impact routing performance. Consider optimization.
+ 49: [WARNING DRT-0120] Large net net263 has 198 pins which may impact routing performance. Consider optimization.
+ 50: [WARNING DRT-0120] Large net net260 has 215 pins which may impact routing performance. Consider optimization.
+ 51: [WARNING DRT-0120] Large net net259 has 153 pins which may impact routing performance. Consider optimization.
+ 52: [WARNING DRT-0120] Large net net251 has 113 pins which may impact routing performance. Consider optimization.
+ 53: [WARNING DRT-0120] Large net net252 has 102 pins which may impact routing performance. Consider optimization.
+ 54: [WARNING DRT-0120] Large net net246 has 134 pins which may impact routing performance. Consider optimization.
+ 55: [WARNING DRT-0120] Large net net244 has 260 pins which may impact routing performance. Consider optimization.
+499: [WARNING EST-0026] Missing route to pin _5804_/A1 in net _1685_.
+500: [WARNING EST-0026] Missing route to pin _5804_/A1 in net _1685_.
+501: [WARNING EST-0026] Missing route to pin _5804_/A1 in net _1685_.
+502: [WARNING EST-0026] Missing route to pin _6656_/S0 in net net257.
+503: [WARNING EST-0026] Missing route to pin _6048_/S0 in net net257.
+504: [WARNING EST-0026] Missing route to pin _6042_/S0 in net net257.
+505: [WARNING EST-0026] Missing route to pin _6656_/S0 in net net257.
+506: [WARNING EST-0026] Missing route to pin _6048_/S0 in net net257.
+507: [WARNING EST-0026] Missing route to pin _6042_/S0 in net net257.
+508: [WARNING EST-0026] Missing route to pin _6656_/S0 in net net257.
+509: [WARNING EST-0026] Missing route to pin _6048_/S0 in net net257.
+510: [WARNING EST-0026] Missing route to pin _6042_/S0 in net net257.
+511: [WARNING EST-0026] Missing route to pin _6324_/S0 in net net255.
+512: [WARNING EST-0026] Missing route to pin _6324_/S0 in net net255.
+513: [WARNING EST-0026] Missing route to pin _6324_/S0 in net net255.
+514: [WARNING EST-0026] Missing route to pin _7681_/S0 in net net256.
+515: [WARNING EST-0026] Missing route to pin _6573_/S0 in net net256.
+516: [WARNING EST-0026] Missing route to pin _7681_/S0 in net net256.
+517: [WARNING EST-0026] Missing route to pin _6573_/S0 in net net256.
+518: [WARNING EST-0026] Missing route to pin _7681_/S0 in net net256.
+519: [WARNING EST-0026] Missing route to pin _6573_/S0 in net net256.
+520: [WARNING EST-0026] Missing route to pin _6110_/S0 in net net258.
+521: [WARNING EST-0026] Missing route to pin _6110_/S0 in net net258.
+522: [WARNING EST-0026] Missing route to pin _6110_/S0 in net net258.
+523: [WARNING EST-0026] Missing route to pin _7431_/S0 in net net246.
+524: [WARNING EST-0026] Missing route to pin _5339_/S0 in net net246.
+525: [WARNING EST-0026] Missing route to pin _7431_/S0 in net net246.
+526: [WARNING EST-0026] Missing route to pin _5339_/S0 in net net246.
+527: [WARNING EST-0026] Missing route to pin _7431_/S0 in net net246.
+528: [WARNING EST-0026] Missing route to pin _5339_/S0 in net net246.
+529: [WARNING EST-0026] Missing route to pin _6788_/S0 in net net247.
+530: [WARNING EST-0026] Missing route to pin _5411_/S0 in net net247.
+531: [WARNING EST-0026] Missing route to pin _6788_/S0 in net net247.
+532: [WARNING EST-0026] Missing route to pin _5411_/S0 in net net247.
+533: [WARNING EST-0026] Missing route to pin _6788_/S0 in net net247.
+534: [WARNING EST-0026] Missing route to pin _5411_/S0 in net net247.
+535: [WARNING EST-0026] Missing route to pin _5373_/S0 in net net248.
+536: [WARNING EST-0026] Missing route to pin _5373_/S0 in net net248.
+537: [WARNING EST-0026] Missing route to pin _5373_/S0 in net net248.
+538: [WARNING EST-0026] Missing route to pin _7977_/B1 in net _3645_.
+539: [WARNING EST-0026] Missing route to pin _7977_/B1 in net _3645_.
+540: [WARNING EST-0026] Missing route to pin _7977_/B1 in net _3645_.
+541: [WARNING EST-0026] Missing route to pin cpu\/cpuregs\[0\]\[26\]$_DFFE_PP_/Q in net cpu\/cpuregs\[0\]\[26\].
+542: [WARNING EST-0026] Missing route to pin cpu\/cpuregs\[0\]\[26\]$_DFFE_PP_/Q in net cpu\/cpuregs\[0\]\[26\].
+543: [WARNING EST-0026] Missing route to pin cpu\/cpuregs\[0\]\[26\]$_DFFE_PP_/Q in net cpu\/cpuregs\[0\]\[26\].
+544: [WARNING EST-0026] Missing route to pin cpu\/cpuregs\[11\]\[2\]$_DFFE_PP_/Q in net cpu\/cpuregs\[11\]\[2\].
+545: [WARNING EST-0026] Missing route to pin cpu\/cpuregs\[11\]\[2\]$_DFFE_PP_/Q in net cpu\/cpuregs\[11\]\[2\].
+546: [WARNING EST-0026] Missing route to pin cpu\/cpuregs\[11\]\[2\]$_DFFE_PP_/Q in net cpu\/cpuregs\[11\]\[2\].
+547: [WARNING EST-0026] Missing route to pin _6619_/A2 in net cpu\/cpuregs\[12\]\[7\].
+548: [WARNING EST-0026] Missing route to pin _6619_/A2 in net cpu\/cpuregs\[12\]\[7\].
+549: [WARNING EST-0026] Missing route to pin _6619_/A2 in net cpu\/cpuregs\[12\]\[7\].
+550: [WARNING EST-0026] Missing route to pin _5788_/A2 in net cpu\/cpuregs\[20\]\[16\].
+551: [WARNING EST-0026] Missing route to pin _5788_/A2 in net cpu\/cpuregs\[20\]\[16\].
+552: [WARNING EST-0026] Missing route to pin _5788_/A2 in net cpu\/cpuregs\[20\]\[16\].
+553: [WARNING EST-0026] Missing route to pin cpu\/cpuregs\[21\]\[12\]$_DFFE_PP_/Q in net cpu\/cpuregs\[21\]\[12\].
+554: [WARNING EST-0026] Missing route to pin cpu\/cpuregs\[21\]\[12\]$_DFFE_PP_/Q in net cpu\/cpuregs\[21\]\[12\].
+555: [WARNING EST-0026] Missing route to pin cpu\/cpuregs\[21\]\[12\]$_DFFE_PP_/Q in net cpu\/cpuregs\[21\]\[12\].
+556: [WARNING EST-0026] Missing route to pin _7506_/A2 in net cpu\/cpuregs\[28\]\[25\].
+557: [WARNING EST-0026] Missing route to pin _7506_/A2 in net cpu\/cpuregs\[28\]\[25\].
+558: [WARNING EST-0026] Missing route to pin _7506_/A2 in net cpu\/cpuregs\[28\]\[25\].
+559: [WARNING EST-0026] Missing route to pin cpu\/mem_rdata_q\[16\]$_DFFE_PP_/Q in net cpu\/mem_rdata_q\[16\].
+560: [WARNING EST-0026] Missing route to pin cpu\/mem_rdata_q\[16\]$_DFFE_PP_/Q in net cpu\/mem_rdata_q\[16\].
+561: [WARNING EST-0026] Missing route to pin cpu\/mem_rdata_q\[16\]$_DFFE_PP_/Q in net cpu\/mem_rdata_q\[16\].
+562: [WARNING EST-0026] Missing route to pin _4495_/A1 in net cpu\/pcpi_rs2\[21\].
+563: [WARNING EST-0026] Missing route to pin _4495_/A1 in net cpu\/pcpi_rs2\[21\].
+564: [WARNING EST-0026] Missing route to pin _4495_/A1 in net cpu\/pcpi_rs2\[21\].

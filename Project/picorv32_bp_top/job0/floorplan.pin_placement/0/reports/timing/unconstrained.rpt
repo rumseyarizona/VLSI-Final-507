@@ -1,0 +1,44 @@
+Startpoint: _8914_ (rising edge-triggered flip-flop)
+Endpoint: cpu/pcpi_rs1[31]$_DFFE_PP_ (rising edge-triggered flip-flop)
+Path Group: unconstrained
+Path Type: max
+Corner: slow
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                141.41    0.00    0.00 ^ _8914_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   258    1.64   58.39   90.69   90.69 ^ _8914_/Q (sky130_fd_sc_hd__dfxtp_1)
+                                         _0005_ (net)
+                 58.39    0.05   90.74 ^ _6712_/S0 (sky130_fd_sc_hd__mux4_2)
+     1    0.00    0.66   22.10  112.84 ^ _6712_/X (sky130_fd_sc_hd__mux4_2)
+                                         _2558_ (net)
+                  0.66    0.00  112.84 ^ _6713_/B (sky130_fd_sc_hd__nor2_1)
+     1    0.00    0.71    0.34  113.18 v _6713_/Y (sky130_fd_sc_hd__nor2_1)
+                                         _2559_ (net)
+                  0.71    0.00  113.18 v _6714_/B (sky130_fd_sc_hd__nor2_1)
+     1    0.00    0.36    0.64  113.82 ^ _6714_/Y (sky130_fd_sc_hd__nor2_1)
+                                         _2560_ (net)
+                  0.36    0.00  113.82 ^ _6715_/B1 (sky130_fd_sc_hd__o21ai_0)
+     1    0.00    0.85    0.30  114.12 v _6715_/Y (sky130_fd_sc_hd__o21ai_0)
+                                         _2561_ (net)
+                  0.85    0.00  114.12 v _6716_/A2 (sky130_fd_sc_hd__a21oi_1)
+     1    0.00    0.57    1.06  115.18 ^ _6716_/Y (sky130_fd_sc_hd__a21oi_1)
+                                         _2562_ (net)
+                  0.57    0.00  115.18 ^ _6717_/B1 (sky130_fd_sc_hd__a21oi_1)
+     1    0.00    0.71    0.31  115.49 v _6717_/Y (sky130_fd_sc_hd__a21oi_1)
+                                         _2563_ (net)
+                  0.71    0.00  115.49 v _6718_/B (sky130_fd_sc_hd__nor2_1)
+     1    0.02    1.80    1.84  117.33 ^ _6718_/Y (sky130_fd_sc_hd__nor2_1)
+                                         _2564_ (net)
+                  1.80    0.00  117.33 ^ _6721_/B1 (sky130_fd_sc_hd__a211oi_1)
+     1    0.00    0.34    0.71  118.04 v _6721_/Y (sky130_fd_sc_hd__a211oi_1)
+                                         _2567_ (net)
+                  0.34    0.00  118.04 v _6722_/B1 (sky130_fd_sc_hd__o21ai_0)
+     1    0.01    1.16    0.60  118.63 ^ _6722_/Y (sky130_fd_sc_hd__o21ai_0)
+                                         _4379_ (net)
+                  1.16    0.00  118.63 ^ cpu/pcpi_rs1[31]$_DFFE_PP_/D (sky130_fd_sc_hd__edfxtp_1)
+                                118.63   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+

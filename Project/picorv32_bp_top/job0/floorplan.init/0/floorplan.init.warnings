@@ -1,0 +1,7 @@
+  22: [WARNING FLW-0001] Defaulting back to default SDC
+  27: Warning: There are 35 input ports missing set_input_delay.
+  63: Warning: There are 68 output ports missing set_output_delay.
+ 132: Warning: There are 1597 unclocked register/latch pins.
+1730: Warning: There are 2913 unconstrained endpoints.
+4644: [WARNING FLW-0001] No clocks defined.
+4661: [WARNING IFP-0028] Core area lower left (10.000, 10.000) snapped to (10.120, 10.880).

@@ -1,0 +1,2 @@
+4042: ABC: Warning: Detected 9 multi-output cells (for example, "sky130_fd_sc_hd__fa_1").
+4050: ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").

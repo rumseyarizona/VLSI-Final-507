@@ -1,0 +1,2 @@
+ 13: [WARNING FLW-0001] No clocks defined.
+132: [WARNING GUI-0076] QStandardPaths: wrong permissions on runtime directory /run/user/1000/, 0755 instead of 0700

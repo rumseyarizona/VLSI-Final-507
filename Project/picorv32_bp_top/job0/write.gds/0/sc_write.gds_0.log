@@ -1,0 +1,115 @@
+| INFO     | job0 | write.gds            | 0 | Running in /home/arthur/ECE507/project/build/picorv32_bp_top/job0/write.gds/0
+| INFO     | job0 | write.gds            | 0 | Tool 'klayout' found with version '0.30.7' in directory '/usr/bin'
+| INFO     | job0 | write.gds            | 0 | klayout -z -nc -rx -r /home/arthur/ECE507/venv/lib/python3.12/site-packages/siliconcompiler/tools/klayout/scripts/klayout_export.py -rd SC_KLAYOUT_ROOT=/home/arthur/ECE507/venv/lib/python3.12/site-packages/siliconcompiler/tools/klayout/scripts -rd SC_TOOLS_ROOT=/home/arthur/ECE507/venv/lib/python3.12/site-packages/siliconcompiler/tools -rd SC_ROOT=/home/arthur/ECE507/venv/lib/python3.12/site-packages/siliconcompiler
+| INFO     | job0 | write.gds            | 0 | [INFO] Loading technology file: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/base/setup/klayout/skywater130.lyt
+| INFO     | job0 | write.gds            | 0 | [INFO] Technology database units are: 0.001um
+| INFO     | job0 | write.gds            | 0 | [INFO] LEF file: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/libs/sky130hd/lef/sky130_fd_sc_hd_merged.lef
+| INFO     | job0 | write.gds            | 0 | [INFO] LEF file: /home/arthur/ECE507/project/sky130_sram_2kbyte_1rw1r_32x512_8.lef
+| INFO     | job0 | write.gds            | 0 | [INFO] LEF file: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/base/apr/sky130_fd_sc.tlef
+| INFO     | job0 | write.gds            | 0 | [INFO] Layout file: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/libs/sky130hd/gds/sky130_fd_sc_hd.gds
+| INFO     | job0 | write.gds            | 0 | [INFO] Layout file: /home/arthur/ECE507/project/sky130_sram_2kbyte_1rw1r_32x512_8.gds
+| INFO     | job0 | write.gds            | 0 | [INFO] Layer properties: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/base/setup/klayout/sky130A.lyp
+| INFO     | job0 | write.gds            | 0 | [INFO] Read in 92 cells from DEF file
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a2111oi_0
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a2111oi_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a211o_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a211oi_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a211oi_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a21boi_0
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a21o_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a21oi_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a21oi_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a21oi_4
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a221o_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a221oi_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a222oi_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a22o_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a22oi_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a2bb2oi_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a311o_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a311oi_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a311oi_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a31o_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a31oi_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a32o_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a32oi_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__a41oi_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__and2_0
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__and2_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__and3_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__and4_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__buf_12
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__buf_4
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__buf_8
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__clkinv_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__conb_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__dfxtp_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__dfxtp_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__diode_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__edfxtp_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__fill_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__fill_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__fill_4
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__fill_8
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__inv_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__inv_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__maj3_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__maj3_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__mux2_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__mux2_4
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__mux2i_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__mux4_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__nand2_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__nand2b_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__nand3_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__nand3b_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__nand4_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__nand4b_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__nor2_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__nor2_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__nor2b_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__nor3_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__nor3_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__nor3b_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__nor4_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__nor4_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__nor4b_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o2111a_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o2111ai_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o211a_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o211ai_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o21a_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o21ai_0
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o21ai_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o21bai_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o221a_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o221ai_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o22a_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o22ai_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o2bb2ai_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o311a_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o311ai_0
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o311ai_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o31a_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o31ai_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o31ai_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__o32ai_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__or2_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__or3_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__or3b_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__or4_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__or4b_2
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__tapvpwrvgnd_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__xnor2_1
+| INFO     | job0 | write.gds            | 0 |   [INFO] DEF cell: sky130_fd_sc_hd__xor2_1
+| INFO     | job0 | write.gds            | 0 | [INFO] Copying toplevel cell 'picorv32_bp_top'
+| INFO     | job0 | write.gds            | 0 | [INFO] Checking for missing GDS/OAS...
+| INFO     | job0 | write.gds            | 0 | [INFO] All LEF cells have matching GDS/OAS cells
+| INFO     | job0 | write.gds            | 0 | [INFO] Checking for orphan cell in the final layout...
+| INFO     | job0 | write.gds            | 0 | [INFO] Writing out GDS/OAS 'outputs/picorv32_bp_top.gds.gz'
+| INFO     | job0 | write.gds            | 0 | [INFO] Opening outputs/picorv32_bp_top.gds.gz
+| INFO     | job0 | write.gds            | 0 | [INFO] Turning off layer: areaid.standardc - 81/4 : 81/4
+| INFO     | job0 | write.gds            | 0 | [INFO] Saving screenshot to outputs/picorv32_bp_top.png
+| INFO     | job0 | write.gds            | 0 | Number of errors: 0
+| INFO     | job0 | write.gds            | 0 | Number of warnings: 0
+| INFO     | job0 | write.gds            | 0 | Finished task in 15.78s

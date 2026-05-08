@@ -1,0 +1,57 @@
+********************************************************************************
+Buffer Report:
+There are 17 buffers that are not marked as dont-use, multi-voltage
+special cells or clock buffers
+
+There are 1 VT types:
+VT type[index]: # buffers, ave leakage
+  -      [0]: 17, 1.9e-08
+
+There are 1 cell footprint types:
+  sky130_fd_sc_hd__buf: 17 [100.00%]
+
+There are 1 cell site types:
+  unithd [H=2720]: 17 [100.00%]
+--------------------------------------------------------------------------------
+Cell                                        Drive Drive    Leak   Site Cell   VT
+                                            Res   Res*Cin          Ht Footpt Type
+--------------------------------------------------------------------------------
+sky130_fd_sc_hd__bufbuf_16                  756.9 1.9e-12 5.4e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__buf_12                     759.7 7.6e-12 3.1e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__buf_16                     764.4 1.1e-11 4.2e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__buf_8                     1086.3 8.3e-12 2.3e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__bufbuf_8                  1129.9 2.2e-12 3.3e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__buf_6                     1337.3 6.8e-12 1.8e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__buf_4                     1868.3 4.9e-12 1.3e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__buf_2                     3340.2 6.4e-12 1.1e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__clkdlybuf4s25_2           3502.2 8.5e-12 1.1e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__clkdlybuf4s18_2           3543.0 8.6e-12 1.2e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__clkdlybuf4s50_2           3551.1 8.4e-12 1.0e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__clkdlybuf4s15_2           3729.8 9.0e-12 1.6e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__clkdlybuf4s15_1           6523.6 1.6e-11 1.5e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__clkdlybuf4s18_1           6531.2 1.6e-11 1.0e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__clkdlybuf4s50_1           6579.0 1.6e-11 8.6e-09 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__clkdlybuf4s25_1           6760.5 1.6e-11 7.8e-09 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__buf_1                     8081.6 1.9e-11 8.5e-09 2720 sky130_fd_sc_hd__buf -
+
+Filtered Buffer Report:
+There are 10 buffers after filtering based on threshold voltage,
+cell footprint, drive strength and cell site
+--------------------------------------------------------------------------------
+Cell                                        Drive Drive    Leak   Site Cell   VT
+                                            Res   Res*Cin          Ht Footpt Type
+--------------------------------------------------------------------------------
+sky130_fd_sc_hd__bufbuf_16                  756.9 1.9e-12 5.4e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__buf_12                     759.7 7.6e-12 3.1e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__bufbuf_8                  1129.9 2.2e-12 3.3e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__buf_4                     1868.3 4.9e-12 1.3e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__clkdlybuf4s50_2           3551.1 8.4e-12 1.0e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__clkdlybuf4s25_2           3502.2 8.5e-12 1.1e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__clkdlybuf4s15_2           3729.8 9.0e-12 1.6e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__clkdlybuf4s15_1           6523.6 1.6e-11 1.5e-08 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__clkdlybuf4s50_1           6579.0 1.6e-11 8.6e-09 2720 sky130_fd_sc_hd__buf -
+sky130_fd_sc_hd__clkdlybuf4s25_1           6760.5 1.6e-11 7.8e-09 2720 sky130_fd_sc_hd__buf -
+
+Hold Buffer Report:
+sky130_fd_sc_hd__clkdlybuf4s50_1 is the buffer chosen for hold fixing
+********************************************************************************
