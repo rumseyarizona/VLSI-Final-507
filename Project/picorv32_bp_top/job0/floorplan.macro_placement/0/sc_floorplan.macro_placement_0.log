@@ -1,3 +1,0 @@
-| INFO     | job0 | floorplan.macro_p... | 0 | Running in /home/arthur/ECE507/project/build/picorv32_bp_top/job0/floorplan.macro_placement/0
-| WARNING  | job0 | floorplan.macro_p... | 0 | Removing floorplan.macro_placement/0 due to no macros to place.
-| INFO     | job0 | floorplan.macro_p... | 0 | Finished task in 0.08s

@@ -1,0 +1,287 @@
+OpenROAD v2.0-27941-gf9f3050fe8 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 20 thread(s).
+[INFO FLW-0001] Defining timing corners: fast slow typical
+Reading liberty file for fast: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/libs/sky130hd/nldm/sky130_fd_sc_hd__ff_100C_1v95.lib.gz
+Reading liberty file for slow: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/libs/sky130hd/nldm/sky130_fd_sc_hd__ss_n40C_1v40.lib.gz
+Reading liberty file for typical: /home/arthur/.sc/cache/lambdapdk-v0.2.12-7b36460386694c92/lambdapdk/sky130/libs/sky130hd/nldm/sky130_fd_sc_hd__tt_025C_1v80.lib.gz
+Reading ODB: inputs/picorv32_bp_top.odb.gz
+Reading SDC: inputs/picorv32_bp_top.sdc
+[INFO FLW-0001] Timing path groups: asynchronous {path delay} {gated clock} unconstrained
+[WARNING FLW-0001] No clocks defined.
+[INFO FLW-0001] Sourcing parasitic estimation from: /home/arthur/ECE507/project/build/picorv32_bp_top/job0/floorplan.pin_placement/0/inputs/sc_parasitics.tcl
+[INFO FLW-0001] Using met5 for clock parasitics estimation
+[INFO FLW-0001] Using met3 for signal parasitics estimation
+[INFO FLW-0001] Setting global routing adjustment for li1 to 100%
+[INFO FLW-0001] Setting global routing adjustment for met1 to 40.0%
+[INFO FLW-0001] Setting global routing adjustment for met2 to 40.0%
+[INFO FLW-0001] Setting global routing adjustment for met3 to 30.0%
+[INFO FLW-0001] Setting global routing adjustment for met4 to 30.0%
+[INFO FLW-0001] Setting global routing adjustment for met5 to 30.0%
+Global connection rules: 2
+  Instances: ".*" with pins "VPWR" connect to "VDD"
+  Instances: ".*" with pins "VGND" connect to "VSS"
+[INFO FLW-0001] Performing global placement without considering IO
+[INFO GPL-0022] Initialize gpl and calculate uniform density.
+global_placement siliconcompiler arguments: -routability_driven -timing_driven -skip_io
+[INFO GPL-0005] Execute conjugate gradient initial placement.
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: ( 10.120 10.880 ) ( 1189.560 1188.640 ) um
+[INFO GPL-0032] Initializing region: Top-level
+[INFO GPL-0006] Number of instances:             24194
+[INFO GPL-0007] Movable instances:                5707
+[INFO GPL-0008] Fixed instances:                 18487
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                   5742
+[INFO GPL-0011] Number of pins:                  23238
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) ( 1200.000 1200.000 ) um
+[INFO GPL-0013] Core BBox: ( 10.120 10.880 ) ( 1189.560 1188.640 ) um
+[INFO GPL-0016] Core area:                  1389097.254 um^2
+[INFO GPL-0014] Region name: top-level.
+[INFO GPL-0015] Region area:                1389097.254 um^2
+[INFO GPL-0017] Fixed instances area:        23130.934 um^2
+[INFO GPL-0018] Movable instances area:      81177.987 um^2
+[INFO GPL-0019] Utilization:                     5.943 %
+[INFO GPL-0020] Standard cells area:         81177.987 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0033] Initializing Nesterov region: Top-level
+[INFO GPL-0023] Placement target density:       0.6000
+[INFO GPL-0024] Movable insts average area:     14.224 um^2
+[INFO GPL-0025] Ideal bin area:                 23.707 um^2
+[INFO GPL-0026] Ideal bin count:                 58594
+[INFO GPL-0027] Total bin area:             1389097.254 um^2
+[INFO GPL-0028] Bin count (X, Y):         128 ,    128
+[INFO GPL-0029] Bin size (W * H):       9.214 *  9.201 um
+[INFO GPL-0030] Number of bins:                  16384
+[INFO GPL-0007] Execute nesterov global placement.
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        0 |   0.9974 |  1.896308e+04 |   +0.00% |  8.76e-16 |      
+       10 |   0.9950 |  8.412483e+03 |  -55.64% |  1.43e-15 |      
+       20 |   0.9950 |  8.176295e+03 |   -2.81% |  2.32e-15 |      
+       30 |   0.9950 |  8.088228e+03 |   -1.08% |  3.79e-15 |      
+       40 |   0.9950 |  8.041687e+03 |   -0.58% |  6.17e-15 |      
+       50 |   0.9950 |  8.016544e+03 |   -0.31% |  1.00e-14 |      
+       60 |   0.9950 |  8.005128e+03 |   -0.14% |  1.64e-14 |      
+       70 |   0.9950 |  8.002512e+03 |   -0.03% |  2.66e-14 |      
+       80 |   0.9950 |  8.013170e+03 |   +0.13% |  4.34e-14 |      
+       90 |   0.9950 |  8.037265e+03 |   +0.30% |  7.07e-14 |      
+      100 |   0.9949 |  8.087492e+03 |   +0.62% |  1.15e-13 |      
+      110 |   0.9947 |  8.207350e+03 |   +1.48% |  1.88e-13 |      
+      120 |   0.9936 |  8.508888e+03 |   +3.67% |  3.06e-13 |      
+      130 |   0.9923 |  9.204357e+03 |   +8.17% |  4.98e-13 |      
+      140 |   0.9921 |  1.063027e+04 |  +15.49% |  8.11e-13 |      
+      150 |   0.9907 |  1.302512e+04 |  +22.53% |  1.32e-12 |      
+      160 |   0.9889 |  1.631369e+04 |  +25.25% |  2.15e-12 |      
+      170 |   0.9836 |  2.042997e+04 |  +25.23% |  3.50e-12 |      
+      180 |   0.9776 |  2.567103e+04 |  +25.65% |  5.70e-12 |      
+      190 |   0.9560 |  3.370252e+04 |  +31.29% |  9.27e-12 |      
+      200 |   0.9345 |  4.191716e+04 |  +24.37% |  1.51e-11 |      
+      210 |   0.9136 |  5.075455e+04 |  +21.08% |  2.46e-11 |      
+      220 |   0.8818 |  6.017030e+04 |  +18.55% |  4.00e-11 |      
+      230 |   0.8486 |  6.749470e+04 |  +12.17% |  6.50e-11 |      
+      240 |   0.8169 |  7.519731e+04 |  +11.41% |  1.06e-10 |      
+      250 |   0.7756 |  8.587777e+04 |  +14.20% |  1.72e-10 |      
+      260 |   0.7358 |  9.324868e+04 |   +8.58% |  2.80e-10 |      
+      270 |   0.6943 |  1.003952e+05 |   +7.66% |  4.56e-10 |      
+      280 |   0.6454 |  1.084989e+05 |   +8.07% |  7.42e-10 |      
+      290 |   0.5968 |  1.165728e+05 |   +7.44% |  1.21e-09 |      
+      300 |   0.5390 |  1.223960e+05 |   +5.00% |  1.97e-09 |      
+      310 |   0.4864 |  1.275464e+05 |   +4.21% |  3.20e-09 |      
+      320 |   0.4302 |  1.320768e+05 |   +3.55% |  5.21e-09 |      
+      330 |   0.3790 |  1.342834e+05 |   +1.67% |  8.49e-09 |      
+      340 |   0.3274 |  1.363266e+05 |   +1.52% |  1.34e-08 |      
+      350 |   0.2971 |  1.369778e+05 |   +0.48% |  1.98e-08 |      
+      360 |   0.2657 |  1.384935e+05 |   +1.11% |  2.91e-08 |      
+      370 |   0.2336 |  1.392807e+05 |   +0.57% |  4.29e-08 |      
+      380 |   0.2004 |  1.402353e+05 |   +0.69% |  6.32e-08 |      
+      390 |   0.1703 |  1.410645e+05 |   +0.59% |  9.30e-08 |      
+      400 |   0.1511 |  1.417341e+05 |   +0.47% |  1.37e-07 |      
+      410 |   0.1296 |  1.423587e+05 |   +0.44% |  2.02e-07 |      
+      420 |   0.1089 |  1.426960e+05 |   +0.24% |  2.97e-07 |      
+      427 |   0.0990 |  1.429090e+05 |          |  4.05e-07 |      
+---------------------------------------------------------------
+[INFO GPL-1001] Global placement finished at iteration 427
+[INFO GPL-1002] Placed Cell Area            81177.9867
+[INFO GPL-1003] Available Free Area         1365966.3200
+[INFO GPL-1004] Minimum Feasible Density        0.0600 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.0660
+[INFO GPL-1008]     - For 80% usage of free space: 0.0743
+[INFO GPL-1009]     - For 50% usage of free space: 0.1189
+[INFO GPL-1014] Final placement area: 81177.99 (+0.00%)
+Found 0 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0001] Number of available slots 4362
+[INFO PPL-0002] Number of I/O             105
+[INFO PPL-0003] Number of I/O w/sink      105
+[INFO PPL-0004] Number of I/O w/o sink    0
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 55298.84 um.
+Writing database: outputs/picorv32_bp_top.odb.gz
+Writing DEF: outputs/picorv32_bp_top.def.gz
+Writing netlist: outputs/picorv32_bp_top.vg
+Writing LEC netlist: outputs/picorv32_bp_top.lec.vg
+Writing SDC: outputs/picorv32_bp_top.sdc
+SC_METRIC: report_checks -path_delay max
+No paths found.
+SC_METRIC: setupslack
+worst slack max INF
+SC_METRIC: tns
+tns max 0.00
+SC_METRIC: unconstrained
+Startpoint: _8914_ (rising edge-triggered flip-flop)
+Endpoint: cpu/pcpi_rs1[31]$_DFFE_PP_ (rising edge-triggered flip-flop)
+Path Group: unconstrained
+Path Type: max
+Corner: slow
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                141.41    0.00    0.00 ^ _8914_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   258    1.64   58.39   90.69   90.69 ^ _8914_/Q (sky130_fd_sc_hd__dfxtp_1)
+                                         _0005_ (net)
+                 58.39    0.05   90.74 ^ _6712_/S0 (sky130_fd_sc_hd__mux4_2)
+     1    0.00    0.66   22.10  112.84 ^ _6712_/X (sky130_fd_sc_hd__mux4_2)
+                                         _2558_ (net)
+                  0.66    0.00  112.84 ^ _6713_/B (sky130_fd_sc_hd__nor2_1)
+     1    0.00    0.71    0.34  113.18 v _6713_/Y (sky130_fd_sc_hd__nor2_1)
+                                         _2559_ (net)
+                  0.71    0.00  113.18 v _6714_/B (sky130_fd_sc_hd__nor2_1)
+     1    0.00    0.36    0.64  113.82 ^ _6714_/Y (sky130_fd_sc_hd__nor2_1)
+                                         _2560_ (net)
+                  0.36    0.00  113.82 ^ _6715_/B1 (sky130_fd_sc_hd__o21ai_0)
+     1    0.00    0.85    0.30  114.12 v _6715_/Y (sky130_fd_sc_hd__o21ai_0)
+                                         _2561_ (net)
+                  0.85    0.00  114.12 v _6716_/A2 (sky130_fd_sc_hd__a21oi_1)
+     1    0.00    0.57    1.06  115.18 ^ _6716_/Y (sky130_fd_sc_hd__a21oi_1)
+                                         _2562_ (net)
+                  0.57    0.00  115.18 ^ _6717_/B1 (sky130_fd_sc_hd__a21oi_1)
+     1    0.00    0.71    0.31  115.49 v _6717_/Y (sky130_fd_sc_hd__a21oi_1)
+                                         _2563_ (net)
+                  0.71    0.00  115.49 v _6718_/B (sky130_fd_sc_hd__nor2_1)
+     1    0.02    1.80    1.84  117.33 ^ _6718_/Y (sky130_fd_sc_hd__nor2_1)
+                                         _2564_ (net)
+                  1.80    0.00  117.33 ^ _6721_/B1 (sky130_fd_sc_hd__a211oi_1)
+     1    0.00    0.34    0.71  118.04 v _6721_/Y (sky130_fd_sc_hd__a211oi_1)
+                                         _2567_ (net)
+                  0.34    0.00  118.04 v _6722_/B1 (sky130_fd_sc_hd__o21ai_0)
+     1    0.01    1.16    0.60  118.63 ^ _6722_/Y (sky130_fd_sc_hd__o21ai_0)
+                                         _4379_ (net)
+                  1.16    0.00  118.63 ^ cpu/pcpi_rs1[31]$_DFFE_PP_/D (sky130_fd_sc_hd__edfxtp_1)
+                                118.63   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+SC_METRIC: floating nets
+Reporting floating nets: reports/floating_nets.rpt
+SC_METRIC: overdriven nets
+Reporting overdriven nets: reports/overdriven_nets.rpt
+Reporting overdriven nets: reports/overdriven_nets_with_parallel.rpt
+SC_METRIC: cellarea
+Design area 77203 um^2 6% utilization.
+Cell type report:                       Count       Area
+  Tap cell                              18487   23130.93
+  Inverter                                 84     315.30
+  Sequential cell                        1597   44782.95
+  Multi-Input combinational cell         4026   32104.54
+  Total                                 24194  100333.73
+
+Cell instance report:
+  sky130_fd_sc_hd__a2111oi_0                1       8.76
+  sky130_fd_sc_hd__a2111oi_2                1      15.01
+  sky130_fd_sc_hd__a211o_1                 12     105.10
+  sky130_fd_sc_hd__a211oi_1                23     172.67
+  sky130_fd_sc_hd__a211oi_2                 2      25.02
+  sky130_fd_sc_hd__a21boi_0                 5      37.54
+  sky130_fd_sc_hd__a21o_1                  63     472.95
+  sky130_fd_sc_hd__a21oi_1                276    1381.32
+  sky130_fd_sc_hd__a21oi_2                  1       8.76
+  sky130_fd_sc_hd__a21oi_4                  1      16.27
+  sky130_fd_sc_hd__a221o_1                 15     150.14
+  sky130_fd_sc_hd__a221oi_1                25     218.96
+  sky130_fd_sc_hd__a222oi_1                40     400.38
+  sky130_fd_sc_hd__a22o_1                  27     236.48
+  sky130_fd_sc_hd__a22oi_1                 38     285.27
+  sky130_fd_sc_hd__a2bb2oi_1                1       8.76
+  sky130_fd_sc_hd__a311o_1                  2      20.02
+  sky130_fd_sc_hd__a311oi_1                11      96.34
+  sky130_fd_sc_hd__a311oi_2                 3      45.04
+  sky130_fd_sc_hd__a31o_1                   4      35.03
+  sky130_fd_sc_hd__a31oi_1                 64     400.38
+  sky130_fd_sc_hd__a32o_1                   8      80.08
+  sky130_fd_sc_hd__a32oi_1                 10      87.58
+  sky130_fd_sc_hd__a41oi_1                  3      26.28
+  sky130_fd_sc_hd__and2_0                  26     162.66
+  sky130_fd_sc_hd__and2_1                  53     331.57
+  sky130_fd_sc_hd__and3_1                  49     306.54
+  sky130_fd_sc_hd__and4_1                  32     280.27
+  sky130_fd_sc_hd__clkinv_1                 3      11.26
+  sky130_fd_sc_hd__conb_1                   1       3.75
+  sky130_fd_sc_hd__dfxtp_1                317    6346.09
+  sky130_fd_sc_hd__edfxtp_1              1280   38436.86
+  sky130_fd_sc_hd__inv_1                   80     300.29
+  sky130_fd_sc_hd__inv_2                    1       3.75
+  sky130_fd_sc_hd__maj3_1                   4      40.04
+  sky130_fd_sc_hd__maj3_2                   7      78.83
+  sky130_fd_sc_hd__mux2_2                  54     608.08
+  sky130_fd_sc_hd__mux2_4                   1      15.01
+  sky130_fd_sc_hd__mux2i_1                 75     750.72
+  sky130_fd_sc_hd__mux4_2                 540   12161.66
+  sky130_fd_sc_hd__nand2_1                541    2030.70
+  sky130_fd_sc_hd__nand2b_1                39     243.98
+  sky130_fd_sc_hd__nand3_1                 76     380.36
+  sky130_fd_sc_hd__nand3b_1                11      82.58
+  sky130_fd_sc_hd__nand4_1                 21     131.38
+  sky130_fd_sc_hd__nand4b_1                 3      26.28
+  sky130_fd_sc_hd__nor2_1                 619    2323.48
+  sky130_fd_sc_hd__nor2b_1                 47     294.03
+  sky130_fd_sc_hd__nor3_1                 112     560.54
+  sky130_fd_sc_hd__nor3_2                   2      20.02
+  sky130_fd_sc_hd__nor3b_1                  2      15.01
+  sky130_fd_sc_hd__nor4_1                  20     125.12
+  sky130_fd_sc_hd__nor4_2                   2      25.02
+  sky130_fd_sc_hd__nor4b_1                  3      26.28
+  sky130_fd_sc_hd__o2111a_1                 1      11.26
+  sky130_fd_sc_hd__o2111ai_1                1       8.76
+  sky130_fd_sc_hd__o211a_1                  2      20.02
+  sky130_fd_sc_hd__o211ai_1                28     210.20
+  sky130_fd_sc_hd__o21a_1                  33     247.74
+  sky130_fd_sc_hd__o21ai_0                556    2782.67
+  sky130_fd_sc_hd__o21ai_1                  7      35.03
+  sky130_fd_sc_hd__o21bai_1                 3      22.52
+  sky130_fd_sc_hd__o221a_2                  3      33.78
+  sky130_fd_sc_hd__o221ai_1                58     507.99
+  sky130_fd_sc_hd__o22a_1                   1       8.76
+  sky130_fd_sc_hd__o22ai_1                 48     300.29
+  sky130_fd_sc_hd__o2bb2ai_1                2      17.52
+  sky130_fd_sc_hd__o311a_1                  1      10.01
+  sky130_fd_sc_hd__o311ai_0                 4      35.03
+  sky130_fd_sc_hd__o311ai_1                 8      70.07
+  sky130_fd_sc_hd__o31a_1                   5      43.79
+  sky130_fd_sc_hd__o31ai_1                 26     195.19
+  sky130_fd_sc_hd__o31ai_2                  1      12.51
+  sky130_fd_sc_hd__o32ai_1                 11      96.34
+  sky130_fd_sc_hd__or2_1                   27     168.91
+  sky130_fd_sc_hd__or3_1                   20     125.12
+  sky130_fd_sc_hd__or3b_2                   3      26.28
+  sky130_fd_sc_hd__or4_1                    5      37.54
+  sky130_fd_sc_hd__or4b_2                   2      20.02
+  sky130_fd_sc_hd__tapvpwrvgnd_1        18487   23130.93
+  sky130_fd_sc_hd__xnor2_1                123    1077.28
+  sky130_fd_sc_hd__xor2_1                  71     621.85
+[WARNING GUI-0076] QStandardPaths: wrong permissions on runtime directory /run/user/1000/, 0755 instead of 0700
+[INFO FLW-0001] Saving "snapshot" to reports/images/picorv32_bp_top.png
+[INFO FLW-0001] Saving "placement" to reports/images/picorv32_bp_top.placement.png
+[INFO FLW-0001] Saving "setup timing histogram" to reports/images/timing/setup.histogram.png
+[WARNING GUI-0097] All pins are unconstrained. Cannot plot histogram. Check if timing data is loaded!
+[WARNING GUI-0097] All pins are unconstrained. Cannot plot histogram. Check if timing data is loaded!
+[INFO FLW-0001] Saving "placement density heatmap" to reports/images/heatmap/placement_density.png
+[WARNING GRT-0281] Net clk has a large fanout of 1598 terminals.
+[INFO FLW-0001] Saving "estimated routing congestion heatmap" to reports/images/heatmap/estimated_routing_congestion.png
