@@ -1,7 +1,7 @@
 PicoRV32 Neural Branch Predictor + SRAM Macro Integration
 =========================================================
 
-This folder contains the source files required to reproduce the PicoRV32-based SoC implementation with a custom perceptron-inspired branch predictor and an integrated Sky130 2 KB SRAM hard macro.
+This folder contains the source files required to reproduce the PicoRV32-based SoC implementation with a custom perceptron-inspired branch predictor and an integrated Sky130 2 KB SRAM hard macro. It also contains images of key results and logs of completed runs.
 
 Project Overview
 ----------------
