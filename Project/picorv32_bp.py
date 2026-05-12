@@ -11,8 +11,8 @@ except ImportError:
 
 def build_top():
     design_name = 'picorv32_bp_top'
-    die_w = 1200
-    die_h = 1200
+    die_w = 1000
+    die_h = 1000
 
     # 1. Setup the Design Object
     design = Design(design_name)
@@ -32,11 +32,17 @@ def build_top():
         
         # Add the SRAM blackbox Wrapper
         design.add_file('sky130_sram_2k.bb.v')
-    
+
+        design.add_file('picorv32.sdc')    
     # 2. Setup the Project Object
     project = ASIC(design)
     project.add_fileset(['rtl'])
     skywater130_demo(project)
+
+    flow = project.get_flow()
+    flow.remove_node('place.repair_design', '0')
+    flow.remove_node('cts.repair_timing', '0')
+    project.set_flow(flow)
 
     # 3. Setup SRAM Macro Library
     sram_lib = sky130_sram_2k.setup(stackup='5M1MIC')
@@ -47,14 +53,20 @@ def build_top():
     # 4. Tool Options for OpenROAD
     project.set('tool', 'openroad', 'task', 'global_route', 'var', 'grt_macro_extension', '0')
     project.set('tool', 'openroad', 'task', 'write_data', 'var', 'write_cdl', 'false')
-    project.set('tool', 'openroad', 'task', 'global_placement', 'var', 'place_density', '0.5')
+    project.set('tool', 'openroad', 'task', 'global_placement', 'var', 'place_density', '0.50')
+    project.set('tool', 'openroad', 'task', 'global_placement', 'var', 'gpl_timing_driven', False)
     project.set('tool', 'openroad', 'task', 'init_floorplan', 'var', 'ord_enable_images', 'false')
     project.set('tool', 'openroad', 'task', 'macro_placement', 'var', 'ord_enable_images', 'false')
     project.set('tool', 'openroad', 'task', 'global_placement', 'var', 'ord_enable_images', 'false')
     project.set('tool', 'openroad', 'task', 'detailed_placement', 'var', 'ord_enable_images', 'false')
     project.set('tool', 'openroad', 'task', 'global_route', 'var', 'ord_enable_images', 'false')
     project.set('tool', 'openroad', 'task', 'detailed_route', 'var', 'ord_enable_images', 'false')
-
+    project.set('tool', 'openroad', 'task', 'clock_tree_synthesis', 'var', 'ord_enable_images', 'false')
+    project.set('tool', 'openroad', 'task', 'repair_timing', 'var', 'ord_enable_images', 'false')
+    project.set('tool', 'openroad', 'task', 'fillercell_insertion', 'var', 'ord_enable_images', 'false')
+    project.set('tool', 'openroad', 'task', 'antenna_repair', 'var', 'ord_enable_images', 'false')
+    project.set('tool', 'openroad', 'task', 'write_data', 'var', 'ord_enable_images', 'false')
+    
     # 5. Floorplanning & Constraints
     area = project.constraint.area
     margin = 10
